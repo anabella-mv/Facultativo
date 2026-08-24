@@ -9,17 +9,52 @@
 \usepackage{polynom}
 \title{Facultad de Matemática, Astronomía, Física y Computación}
 \author{Didáctica}
-\date{11 de Agosto de 2026}
+\date{24 de Agosto de 2026}
 \begin{document}
 \maketitle
-\section{Resolucion}
+\section{Enunciado del ejercicio}
+\begin{enumerate}
+    \item Se tiene el triangulo rectángulo isósceles cuyos catetos miden 11 cm. Considerar los rectángulos que se pueden dibujar dentro de la figura de la siguiente manera:
+    \begin{figure}[htb]
+        \centering
+        \includegraphics[scale=0.6]{image.png}
+    \end{figure}
     \begin{enumerate}
-        \item Tarea 1
-        \begin{enumerate}
-            \item Basta con entender que por el teorema fundamental de la aritmetica, todo numero entero puede ser expresado como un producto de numeros primos, y que este producto es unico salvo el orden de los factores. Por lo tanto, es múltiplo de 5 y 35 purs en los factores que componen la multiplicación están el 15 y 14 que ambos son el producto de 5 y 7 pero el producto de 5 y 7 es 35, aunque los multiplos se dan en el producto con numeros naturales, particularmente nuestra operacion cuenta con la suma de dos numeros positivos, lo que resulta imposible forzar que se haga negativa al multiplicarla por mas naturales.
-            \item numero entero de k tal que $5^2(k+3)^2$ sea multiplo de 7, como 5 es un numero primo y estoy viendo el producto, basta con forzar que $(k+3)^2$ sea multiplo de 7, por lo tanto $k+3$ es multiplo de 7, entonces $k$ es multiplo de 7 menos 3, es decir $k=7n-3$ para algun numero entero n. Y si, K puede ser negativo porque al estar elevado al cuadrado el resultado es positivo, y por lo tanto el producto es multiplo de 7.
-        \end{enumerate}
-        \item 
+        \item ¿Cual es el área del rectángulo de base 2?
+        \item ¿Habrá algún rectángulo de este tipo que tenga un área mayor que el que está dibujado? Si es posible encontrar alguno, dar la base.
+        \item ¿Habrá algún rectángulo de este tipo que tenga un área menor que el de base 2? Si es posible encontrar alguno, dar la base.
+        \item ¿Habrá algún rectángulo de este tipo que tenga un área igual que el de base 2? Si es posible encontrar alguno, dar la base.
+        \item Para cada uno de los siguientes 6 gráficos, decidan si puede corresponder o no a la representación gráfica de la variación del área del rectángulo en función de la base del mismo. En cada caso, justifiquen su respuesta.
     \end{enumerate}
-74
+    \begin{figure}[htb]
+        \centering
+        \includegraphics[scale=0.7]{image1.png}
+    \end{figure}
+\end{enumerate}
+\section{Actividad a realizar}
+¿Qué respuestas pueden producir estudiantes que no conocen la función cuadrática al intentar resolver este problema? Intenten imaginar producciones y dificultades teniendo en cuenta que estos estudiantes sí estudiaron función lineal previamente.
+\subsection{Propuestas de resolución}
+Se puede plantear pensar en la hipotenusa del triángulo que se comporta como una función lineal que al evaluar un valor de x (en este caso correspondería a la base) me devolvería el valor de la y (correspondiente a la altura). Como es un triángulo rectángulo isósceles si ubicamos sus catetos para que coincidan con los ejes y el vértice entre ellos con el origen podemos obtener puntos para escribir la función lineal, pensamos el punto $A$ en $(0,11)$ y el $B$ en $(11,0)$ entonces la hipotenusa se puede escribir de la siguiente manera:
+\begin{gather*}
+    h(0)=m \cdot 0 +b=11 \implies b=11\\
+    h(11)= m \cdot 11 +11=0 \implies 11m=-11 \implies m=-1
+\end{gather*}
+\begin{enumerate}
+    \item Para el área del rectángulo de base 2 quizá el primer pensamiento no es el de generalizar, si no que van a tratar de graficarlo dentro del triangulo y calcular la altura con regla. Luego si se llega a la generalización:
+    \begin{align*}
+        h(2)=-1 \cdot 2 +11 = 9
+    \end{align*}
+    Ahora como conozco la altura, basta sacar el área $area=9 \cdot 2=18$
+    \item En lo personal, siento que por primera intuición van a evaluar distintos rectángulos dentro del triangulo. Por ejemplo con uno de base 4 y otro de base 10 (muy probablemente su primera intuición sea usar un valor de base mas grande):
+    \begin{gather*}
+        h(4)=-1\cdot 4 +11=7 \implies area=7\cdot 4=28\\
+        h(10)=-1\cdot 10 +11=1 \implies area= 10\cdot 1=10
+    \end{gather*}
+    Acá es facil ver que las áreas no corresponden a la intuición de a mayor base mayor área. Pero si encontraron dos valores simplemente evaluando y trabajando con lo que ya tenian lo toman de respuesta para este inciso y el siguiente. Sí, existe uno de mayor área y tiene de base 4.
+    \item Sí, por lo evaluado antes, tenemos uno de menor área que tiene de base 10.
+    \item Es probable que por primera intuición la respuesta que quieran dar sea no por pensar que al variar las bases entonces no hay manera de lograr los mismos valores, de allí quizá el comentario de "dar la base" por alguna norma matemática del aula interpreten que tiene que haber tal base que lo cumpla, entre opciones de resolución , pueden formar una tabla de valores entre las bases y su áreas obtenidas. Entre esos valores pueden llegar al que le da la respuesta o pueden identificar el patrón de comportamiento entre los valores que evaluaron.
+    \item Se pueden guiar por la tabla de valores que armaron antes para ver cual gráfico tiene sentido pero las opciones de que elijan puede variar pues no tienen intuición del comportamiento de una parábola.
+
+\end{enumerate}
+
 \end{document}

@@ -1,0 +1,354 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries\color{blue!70!black}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{black}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\small\bfseries\itshape\color{black!80}}{\thesubsubsection}{1em}{}
+
+\title{\textbf{Facultad de Matemática, Astronomía, Física y Computación (FaMAF)}\\\large Didáctica Especial y Taller de Matemática\\\vspace{0.3cm}\normalsize Análisis de actividades relacionadas con la Gestión Curricular}
+\author{\textbf{Resolución y Análisis Didáctico de Tareas (Excluyendo Tarea 7)}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Marco Teórico y Criterios de Análisis}
+
+Para el desarrollo del presente trabajo se consideran tres ejes analíticos y didácticos fundamentales:
+\begin{enumerate}
+    \item \textbf{Gestión Curricular según Ponte (2005):} Clasificación de las tareas matemáticas según su \textit{grado de desafío} (reducido/alto) y su \textit{grado de apertura} (cerradas/abiertas):
+    \begin{itemize}
+        \item \textbf{Ejercicios:} Grado de desafío reducido, estructura cerrada (aplicación directa de algoritmos o conceptos conocidos).
+        \item \textbf{Problemas:} Grado de desafío alto, estructura cerrada (requieren heurística, diseño de estrategias, pero la meta está claramente delimitada).
+        \item \textbf{Actividades de Exploración:} Grado de desafío reducido/medio, estructura abierta (búsqueda de patrones, formulación de conjeturas iniciales).
+        \item \textbf{Actividades de Investigación:} Grado de desafío alto, estructura abierta (los estudiantes definen preguntas, experimentan, conjeturan, prueban y comunican resultados).
+    \end{itemize}
+    \item \textbf{Ambientes de Aprendizaje según Skovsmose (2000):} Cruce entre el \textit{tipo de referencia} (Matemática Pura, Semirrealidad, Realidad) y la \textit{organización del trabajo} (Paradigma del Ejercicio, Escenario de Investigación), conformando seis ambientes:
+    \begin{itemize}
+        \item \textbf{Ambiente 1:} Matemática Pura / Paradigma del Ejercicio.
+        \item \textbf{Ambiente 2:} Matemática Pura / Escenario de Investigación.
+        \item \textbf{Ambiente 3:} Semirrealidad / Paradigma del Ejercicio.
+        \item \textbf{Ambiente 4:} Semirrealidad / Escenario de Investigación.
+        \item \textbf{Ambiente 5:} Realidad / Paradigma del Ejercicio.
+        \item \textbf{Ambiente 6:} Realidad / Escenario de Investigación.
+    \end{itemize}
+    \item \textbf{Diseño Curricular de la Provincia de Córdoba:} Identificación del ciclo, año/curso, eje temático (Número y Operaciones, Álgebra y Funciones, Geometría y Medida, Estadística y Probabilidad) y los objetivos de aprendizaje correspondientes.
+\end{enumerate}
+
+\newpage
+
+\section{Análisis y Resolución de las Tareas}
+
+% ==========================================
+% TAREA 1
+% ==========================================
+\subsection{Tarea 1}
+
+\subsubsection{Enunciado y Desarrollo Matemático}
+\begin{itemize}
+    \item[a)] \textit{¿Es cierto que, sin hacer cuentas, se puede saber si $-3\cdot 15\cdot 14\cdot (-4) - 3\cdot 15\cdot 14\cdot (-4)$ da como resultado un número que es múltiplo de $5$ y de $35$?}
+    
+    \textbf{Resolución:}
+    Observemos la expresión $E = -3\cdot 15\cdot 14\cdot (-4) - 3\cdot 15\cdot 14\cdot (-4)$.
+    Por la regla de los signos y propiedades algebraicas elementales:
+    \[
+    E = 0
+    \]
+    Puesto que se resta un término de sí mismo ($A - A = 0$). Como el número $0$ es múltiplo de cualquier número entero no nulo (ya que $0 = 5 \cdot 0$ y $0 = 35 \cdot 0$), la respuesta es afirmativa.
+    
+    Si se interpretara como suma de dos términos de igual signo o se analizara cada término $T = 3 \cdot 15 \cdot 14 \cdot 4$: descomponiendo en factores primos se tiene $15 = 3 \cdot 5$ y $14 = 2 \cdot 7$, por lo cual $T = 3 \cdot (3\cdot 5) \cdot (2\cdot 7) \cdot 4 = (5 \cdot 7) \cdot (3^2 \cdot 2 \cdot 4) = 35 \cdot 72$. Dado que contiene los factores $5$ y $7$, cada término es divisible por $5$ y por $35$, por lo que cualquier combinación lineal de ellos también lo es.
+
+    \item[b)] \textit{Encuentren un número entero $k$ de modo que el número $5\cdot(k+3)$ sea múltiplo de $7$. ¿Pueden encontrar otros valores de $k$? ¿Puede haber un valor negativo de $k$?}
+    
+    \textbf{Resolución:}
+    Se busca que $5(k+3) = 7m$ con $m \in \mathbb{Z}$. Como $\operatorname{mcd}(5, 7) = 1$, por el Lema de Euclides debe ser $(k+3)$ múltiplo de $7$, es decir:
+    \[
+    k + 3 = 7n \iff k = 7n - 3, \quad n \in \mathbb{Z}
+    \]
+    Para $n=1$, se obtiene $k=4$ ($5\cdot(4+3) = 35 = 7\cdot 5$).
+    Existen infinitos valores enteros de $k$.
+    Sí puede haber valores negativos: por ejemplo para $n=0 \implies k=-3$ ($5(-3+3)=0=7\cdot 0$), o para $n=-1 \implies k=-10$ ($5(-10+3) = -35 = 7\cdot(-5)$).
+\end{itemize}
+
+\subsubsection{Análisis desde Ponte (2005)}
+La primera parte oscila entre un \textbf{ejercicio} y una \textbf{actividad de exploración}, ya que la consigna ``sin hacer cuentas'' demanda analizar la estructura multiplicativa y la factorización en primos más que la ejecución algorítmica. La segunda parte presenta preguntas guiadas sobre la infinitud y negatividad de las soluciones, situándose como un \textbf{ejercicio con apertura exploratoria}.
+
+\subsubsection{Análisis desde Skovsmose (2000)}
+Corresponde al ámbito de la \textbf{Matemática Pura}. La tarea se ubica en una transición entre el \textbf{Ambiente 1} (Paradigma del Ejercicio) y el \textbf{Ambiente 2} (Escenario de Investigación), al habilitar la búsqueda de patrones y la justificación teórica.
+
+\subsubsection{Diseño Curricular de la Provincia de Córdoba}
+\begin{itemize}
+    \item \textbf{Curso:} 2.$^{\circ}$ o 3.$^{\circ}$ Año (Ciclo Básico).
+    \item \textbf{Eje:} Número y Operaciones / Álgebra y Funciones.
+    \item \textbf{Objetivos:} Utilizar la divisibilidad en $\mathbb{Z}$, el teorema fundamental de la aritmética y las expresiones algebraicas simples para validar conjeturas y justificar propiedades sin recurrir al cálculo exhaustivo.
+\end{itemize}
+
+% ==========================================
+% TAREA 2
+% ==========================================
+\subsection{Tarea 2}
+
+\subsubsection{Enunciado y Desarrollo Matemático}
+La tarea presenta una noticia periodística sobre el promedio de gol por partido en los mundiales de fútbol (1930 a 2010).
+\begin{itemize}
+    \item[a)] \textit{¿Por qué en Italia 1990 y Sudáfrica 2010 informan el promedio con más de dos cifras decimales?}
+    
+    \textbf{Resolución:} Porque en Italia 90 el promedio fue $\frac{115}{52} \approx 2{,}2115$ y en Sudáfrica 2010 era $\frac{133}{60} \approx 2{,}2167$. Con dos cifras decimales ambos promedios redondean a $2{,}21$. Se requieren 4 decimales para desempatar y evidenciar que Sudáfrica superaba a Italia 90 apenas por 5 milésimas ($0{,}005$).
+    
+    \item[b)] \textit{¿Cuáles fueron los tres promedios más altos? ¿Qué observaciones pueden hacer sobre el promedio de goles durante los mundiales?}
+    
+    \textbf{Resolución:} Los tres más altos fueron: 1) Suiza 1954 ($5{,}38$), 2) Francia 1938 ($4{,}67$) e 3) Italia 1934 ($4{,}12$). Se observa una tendencia histórica decreciente en el promedio de gol a lo largo de las décadas (evolución táctica hacia sistemas más defensivos).
+    
+    \item[c)] \textit{¿A qué puede deberse que no se jugaron todas las veces la misma cantidad de partidos?}
+    
+    \textbf{Resolución:} A la modificación del formato del torneo y al incremento paulatino en la cantidad de países participantes clasificados (de 13/16 equipos a 24 y luego a 32 selecciones).
+    
+    \item[d)] \textit{En Francia 1938 se convirtieron 84 goles en 18 partidos; en Inglaterra 1966 se hicieron 89 goles. ¿Por qué el promedio bajó de 4,67 a 2,78?}
+    
+    \textbf{Resolución:} Porque el promedio es el cociente $\frac{\text{goles}}{\text{partidos}}$. En 1966 la cantidad de partidos aumentó significativamente (de 18 a 32, un aumento del $77{,}7\%$), mientras que la cantidad de goles apenas aumentó en 5 ($5{,}9\%$).
+\end{itemize}
+
+\subsubsection{Análisis desde Ponte (2005)}
+Se clasifica como una \textbf{actividad de exploración} y análisis crítico sobre un texto periodístico. Aunque las preguntas son guiadas, requieren interpretar la media aritmética en contexto e integrar saberes extra-matemáticos y numéricos.
+
+\subsubsection{Análisis desde Skovsmose (2000)}
+Pertenece al \textbf{Ambiente 5} (Realidad / Paradigma del Ejercicio) con elementos del \textbf{Ambiente 6} (Escenario de Investigación en la Realidad), ya que toma un artículo periodístico real y estimula la reflexión crítica y la modelización del cociente y promedio.
+
+\subsubsection{Diseño Curricular de la Provincia de Córdoba}
+\begin{itemize}
+    \item \textbf{Curso:} 1.$^{\circ}$ o 2.$^{\circ}$ Año (Ciclo Básico).
+    \item \textbf{Eje:} Estadística y Probabilidad / Número y Operaciones.
+    \item \textbf{Objetivos:} Interpretar información estadística presentada en medios de comunicación, comprender el significado del promedio aritmético como cociente de magnitudes y reflexionar sobre el uso y truncamiento/redondeo de cifras decimales.
+\end{itemize}
+
+% ==========================================
+% TAREA 3
+% ==========================================
+\subsection{Tarea 3}
+
+\subsubsection{Enunciado y Desarrollo Matemático}
+\textit{Sea $ABC$ un triángulo rectángulo isósceles cuyos catetos miden $11\text{ cm}$. Entre todos los rectángulos inscriptos en dicho triángulo, ¿hay alguno cuya área sea la mayor de todas? ¿Y la menor? Realizar un gráfico que represente la situación.}
+
+\textbf{Resolución:}
+Coloquemos el triángulo en un sistema cartesiano con el vértice recto en $B(0,0)$, el cateto horizontal sobre el eje $x$ hasta $C(11,0)$ y el cateto vertical sobre el eje $y$ hasta $A(0,11)$.
+La hipotenusa $AC$ tiene la ecuación de la recta $y = 11 - x$.
+
+Un rectángulo inscripto con un vértice en el origen $(0,0)$ tiene sus lados sobre los ejes y su vértice opuesto $(x, y)$ sobre la hipotenusa $AC$, por lo que $y = 11 - x$, con $x \in (0, 11)$.
+El área del rectángulo en función de la base $x$ es:
+\[
+A(x) = x \cdot y = x(11 - x) = -x^2 + 11x
+\]
+\begin{itemize}
+    \item \textbf{Área máxima:} La función cuadrática $A(x)$ tiene concavidad hacia abajo. El vértice se alcanza en:
+    \[
+    x_v = -\frac{b}{2a} = \frac{11}{2} = 5{,}5\text{ cm} \implies y = 11 - 5{,}5 = 5{,}5\text{ cm}
+    \]
+    El área máxima es $A(5{,}5) = 5{,}5 \cdot 5{,}5 = 30{,}25\text{ cm}^2$ (correspondiente a un cuadrado).
+    \item \textbf{Área menor:} En el intervalo abierto $(0, 11)$, no existe un valor mínimo absoluto, pues cuando $x \to 0^+$ o $x \to 11^-$, $A(x) \to 0$. Si se consideran rectángulos degenerados en el intervalo cerrado $[0, 11]$, el área mínima es $0\text{ cm}^2$ para $x=0$ o $x=11$.
+\end{itemize}
+
+\subsubsection{Análisis desde Ponte (2005)}
+Es un \textbf{problema} de optimización geométrica. Presenta un desafío cognitivo alto que requiere vincular la geometría sintética, el álgebra y el estudio de funciones cuadráticas o análisis de simetrías.
+
+\subsubsection{Análisis desde Skovsmose (2000)}
+Pertenece al \textbf{Ambiente 1} (Matemática Pura / Paradigma del Ejercicio) o \textbf{Ambiente 2} (Escenario de Investigación en Matemática Pura si se utiliza software de geometría dinámica como GeoGebra para conjeturar el máximo).
+
+\subsubsection{Diseño Curricular de la Provincia de Córdoba}
+\begin{itemize}
+    \item \textbf{Curso:} 4.$^{\circ}$ o 5.$^{\circ}$ Año (Ciclo Orientado).
+    \item \textbf{Eje:} Álgebra y Funciones / Geometría y Medida.
+    \item \textbf{Objetivos:} Modelizar situaciones geométricas mediante funciones cuadráticas, determinar máximos y mínimos analítica y gráficamente, e interpretar el dominio en contexto.
+\end{itemize}
+
+% ==========================================
+% TAREA 4
+% ==========================================
+\subsection{Tarea 4}
+
+\subsubsection{Enunciado y Desarrollo Matemático}
+\textit{Dados dos ángulos $A$ y $B$. Construir, si es posible, un triángulo que tenga un ángulo igual a $A$ y otro ángulo igual a $B$. ¿Es posible construir dos distintos? ¿Por qué? ¿Será cierto que dados dos ángulos, siempre es posible construir un triángulo?}
+
+\textbf{Resolución:}
+\begin{enumerate}
+    \item \textbf{Condición de posibilidad:} En la geometría euclidiana plana, la suma de los ángulos interiores de un triángulo es $180^\circ$. Por ende, es posible construir un triángulo si y sólo si:
+    \[
+    \hat{A} + \hat{B} < 180^\circ
+    \]
+    El tercer ángulo queda unívocamente determinado por $\hat{C} = 180^\circ - (\hat{A} + \hat{B})$. Si $\hat{A} + \hat{B} \ge 180^\circ$, es imposible construirlo.
+    \item \textbf{Construcción de triángulos distintos:} Sí, es posible construir infinitos triángulos no congruentes pero semejantes (criterio de semejanza Ángulo-Ángulo, AA). Al fijar únicamente dos ángulos, los triángulos difieren por una homotecia (escalamiento de la longitud de sus lados).
+    \item \textbf{Validez general:} No es cierto que siempre sea posible; falla cuando la suma de los dos ángulos dados es mayor o igual a dos rectos ($180^\circ$).
+\end{enumerate}
+
+\subsubsection{Análisis desde Ponte (2005)}
+Es una \textbf{actividad de exploración} y conjeturación geométrica. Exige a los estudiantes poner a prueba propiedades de existencia y unicidad de figuras geométricas, así como diferenciar congruencia de semejanza.
+
+\subsubsection{Análisis desde Skovsmose (2000)}
+Se encuadra en el \textbf{Ambiente 2} (Matemática Pura / Escenario de Investigación), ya que promueve la exploración geométrica constructiva y el planteo de hipótesis mediante regla y compás o software dinámico.
+
+\subsubsection{Diseño Curricular de la Provincia de Córdoba}
+\begin{itemize}
+    \item \textbf{Curso:} 1.$^{\circ}$ o 2.$^{\circ}$ Año (Ciclo Básico).
+    \item \textbf{Eje:} Geometría y Medida.
+    \item \textbf{Objetivos:} Construir triángulos a partir de datos dados, analizar las condiciones de existencia y unicidad, y justificar la propiedad de la suma de los ángulos interiores.
+\end{itemize}
+
+% ==========================================
+% TAREA 5
+% ==========================================
+\subsection{Tarea 5}
+
+\subsubsection{Enunciado y Desarrollo Matemático}
+\textit{Considerar rectángulos de perímetro $P = 24\text{ cm}$.}
+\begin{itemize}
+    \item[a)] Si $2b + 2h = 24 \implies b + h = 12 \implies h = 12 - b$. Para valores de base $b \in \{2, 4, 6, 8, 10\}$, las alturas son $h \in \{10, 8, 6, 4, 2\}$.
+    \item[b)] En términos geométricos reales (lados positivos), $0 < b < 12$. El límite inferior es $0$ y el superior es $12$ (no alcanzables si el rectángulo no es degenerado).
+    \item[c)] Los puntos $(b, h)$ están alineados sobre la recta $h = -b + 12$.
+    \item[d)] Función altura: $h(b) = 12 - b$.
+    \item[e)] El área $A = b \cdot h = b(12 - b)$ no es constante; varía parabólicamente.
+    \item[f-h)] Función cuadrática de área: $A(b) = -b^2 + 12b$.
+    \item[g)] Vértice en $b = 6\text{ cm}$, con $h = 6\text{ cm}$ (cuadrado), alcanzando un área máxima de $A_{\max} = 36\text{ cm}^2$.
+    \item[i)] Dominios contextualizados: $\operatorname{Dom}(h) = (0, 12)$ y $\operatorname{Dom}(A) = (0, 12)$.
+\end{itemize}
+
+\subsubsection{Análisis desde Ponte (2005)}
+Es una secuencia articulada estructurada como una \textbf{actividad de exploración guiada} que transita desde un nivel de \textbf{ejercicio} (tabulación inicial) hacia un \textbf{problema} de modelización funcional y optimización.
+
+\subsubsection{Análisis desde Skovsmose (2000)}
+Ubicada en el \textbf{Ambiente 1} (Matemática Pura / Paradigma del Ejercicio) con fuerte andamiaje hacia el \textbf{Ambiente 2}, al estudiar el pasaje entre registros de representación semiótica (tabla, gráfico cartesiano, fórmula algebraica).
+
+\subsubsection{Diseño Curricular de la Provincia de Córdoba}
+\begin{itemize}
+    \item \textbf{Curso:} 3.$^{\circ}$ Año (Ciclo Básico) o 4.$^{\circ}$ Año (Ciclo Orientado).
+    \item \textbf{Eje:} Álgebra y Funciones.
+    \item \textbf{Objetivos:} Analizar variaciones lineales y cuadráticas, modelizar relaciones entre magnitudes geométricas, reconocer dominio e imagen y estudiar extremos de funciones cuadráticas.
+\end{itemize}
+
+% ==========================================
+% TAREA 6
+% ==========================================
+\subsection{Tarea 6}
+
+\subsubsection{Enunciado y Desarrollo Matemático}
+\textit{Llenado de recipientes y gráfica de la altura $h$ en función del volumen $V$.}
+\begin{itemize}
+    \item[a)] \textbf{Recipiente cilíndrico:} La tabla muestra una tasa de variación constante: $\frac{h}{V} = \frac{1}{10} = 0{,}1\text{ cm/cm}^3$. La gráfica $h(V) = 0{,}1 V$ es una recta que pasa por el origen (función lineal de proporcionalidad directa).
+    \item[b)] \textbf{Otros recipientes:}
+    \begin{itemize}
+        \item \textit{Botella / Matraz con cuello angosto:} Sección ancha abajo (pendiente baja constante) y sección estrecha arriba (pendiente alta constante). Gráfica con cambio brusco de pendiente positiva.
+        \item \textit{Embudo (cono invertido sobre cilindro pequeño):} Base cilíndrica (recta empinada) y luego sección transversal cónica que se ensancha con la altura, por lo que la tasa de llenado $\frac{dh}{dV}$ disminuye (función cóncava hacia abajo).
+        \item \textit{Matraz esférico con cuello:} Sección se ensancha hasta el ecuador (pendiente decreciente) y luego se angosta (pendiente creciente), formando un punto de inflexión sigmoideo; finaliza con un tramo lineal empinado para el cuello cilíndrico.
+        \item \textit{Cono truncado / Matraz Erlenmeyer:} Sección disminuye uniformemente con la altura, por lo que la altura sube cada vez más rápido por cada unidad de volumen (función convexa, cóncava hacia arriba).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Análisis desde Ponte (2005)}
+Constituye una \textbf{actividad de exploración} y análisis cualitativo de gráficos funcionales. Promueve el razonamiento covariacional sin depender exclusivamente de fórmulas algebraicas explícitas.
+
+\subsubsection{Análisis desde Skovsmose (2000)}
+Se clasifica en el \textbf{Ambiente 3} (Semirrealidad / Paradigma del Ejercicio) o \textbf{Ambiente 4} (Semirrealidad / Escenario de Investigación), ya que utiliza una situación física idealizada para construir nociones de cálculo y covariación.
+
+\subsubsection{Diseño Curricular de la Provincia de Córdoba}
+\begin{itemize}
+    \item \textbf{Curso:} 2.$^{\circ}$ o 3.$^{\circ}$ Año (Ciclo Básico).
+    \item \textbf{Eje:} Álgebra y Funciones.
+    \item \textbf{Objetivos:} Interpretar gráficos cartesianos cualitativos, relacionar variables continuas en fenómenos de cambio y comprender nociones de razón de cambio e inclinación de la curva.
+\end{itemize}
+
+% ==========================================
+% TAREA 8
+% ==========================================
+\subsection{Tarea 8}
+
+\subsubsection{Enunciado y Desarrollo Matemático}
+\textit{¿Cuál es el perímetro de un cuadrado cuya área es de $23\text{ cm}^2$?}
+
+\textbf{Resolución:}
+El área de un cuadrado de lado $l$ es $A = l^2$.
+Dado que $A = 23\text{ cm}^2$:
+\[
+l = \sqrt{23}\text{ cm}
+\]
+El perímetro $P$ es cuatro veces la longitud del lado:
+\[
+P = 4 \cdot l = 4\sqrt{23}\text{ cm} \approx 4 \cdot 4{,}7958 = 19{,}183\text{ cm}
+\]
+
+\subsubsection{Análisis desde Ponte (2005)}
+Es un típico \textbf{ejercicio} cerrado y de desafío cognitivo reducido. Consiste en la aplicación directa y sucesiva de dos fórmulas elementales de geometría plana y radicación.
+
+\subsubsection{Análisis desde Skovsmose (2000)}
+Pertenece claramente al \textbf{Ambiente 1} (Matemática Pura / Paradigma del Ejercicio), caracterizado por enunciados estándar de libro de texto con una única respuesta exacta y técnica operatoria prefijada.
+
+\subsubsection{Diseño Curricular de la Provincia de Córdoba}
+\begin{itemize}
+    \item \textbf{Curso:} 2.$^{\circ}$ o 3.$^{\circ}$ Año (Ciclo Básico).
+    \item \textbf{Eje:} Número y Operaciones / Geometría y Medida.
+    \item \textbf{Objetivos:} Introducir los números irracionales a partir de problemas de medida y cálculo de lados de cuadrados, y operar con expresiones radicales exactas y aproximadas.
+\end{itemize}
+
+% ==========================================
+% TAREA 9
+% ==========================================
+\subsection{Tarea 9}
+
+\subsubsection{Enunciado y Desarrollo Matemático}
+La tarea trabaja sobre el Cuadro H17 del Censo 2010 del INDEC acerca de hogares con población originaria por provincia.
+\begin{itemize}
+    \item[a)] \textbf{Variables analizadas:}
+    \begin{itemize}
+        \item \textit{Provincia / Jurisdicción:} Variable cualitativa nominal.
+        \item \textit{Total de hogares:} Variable cuantitativa discreta.
+        \item \textit{Hogares con personas indígenas u originarias:} Variable cuantitativa discreta.
+        \item \textit{Proporción o porcentaje relativo:} Se calcula como $\frac{\text{Hogares Indígenas}}{\text{Total de Hogares}} \cdot 100$.
+    \end{itemize}
+    \item[b)] \textbf{Observaciones relevantes:} La provincia de Buenos Aires concentra la mayor cantidad absoluta de hogares indígenas ($121.385$), pero en términos relativos, provincias del NOA y Patagonia (como Jujuy con $\approx 11{,}1\%$, Chubut con $\approx 11{,}2\%$, Río Negro con $\approx 9{,}3\%$) presentan porcentajes sensiblemente superiores al promedio nacional ($\approx 3{,}03\%$).
+    \item[c)] \textbf{Visualización y Estadística:} Gráficos de barras comparativos (totales vs.\ porcentajes) y cálculo de medidas de posición (media, mediana, cuartiles, valores extremos).
+\end{itemize}
+
+\subsubsection{Análisis desde Ponte (2005)}
+Es una \textbf{actividad de investigación} escolar en el ámbito de la estadística cívica y social. La consigna es abierta, demanda recolección bibliográfica, formulación de hipótesis, procesamiento de datos y redacción de conclusiones socio-demográficas fundamentadas.
+
+\subsubsection{Análisis desde Skovsmose (2000)}
+Pertenece al \textbf{Ambiente 6} (Realidad / Escenario de Investigación). Los estudiantes abordan datos censales verídicos, confrontando la dimensión sociopolítica con las herramientas estadísticas.
+
+\subsubsection{Diseño Curricular de la Provincia de Córdoba}
+\begin{itemize}
+    \item \textbf{Curso:} 4.$^{\circ}$, 5.$^{\circ}$ o 6.$^{\circ}$ Año (Ciclo Orientado).
+    \item \textbf{Eje:} Estadística y Probabilidad.
+    \item \textbf{Objetivos:} Analizar críticamente información estadística compleja proveniente de fuentes oficiales, calcular e interpretar medidas de posición, elaborar representaciones gráficas pertinentes y comunicar conclusiones argumentadas.
+\end{itemize}
+
+\newpage
+\section{Cuadro Comparativo y de Síntesis Didáctica}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{|c|p{4.2cm}|p{3.5cm}|p{4.8cm}|}
+\hline
+\textbf{Tarea} & \textbf{Clasificación (Ponte, 2005)} & \textbf{Ambiente (Skovsmose)} & \textbf{Ubicación Curricular (Córdoba)} \\ \hline
+\textbf{1} & Ejercicio / Exploración & Ambiente 1 -- 2 (Mat. Pura) & 2.$^{\circ}$/3.$^{\circ}$ Año (Número y Operaciones) \\ \hline
+\textbf{2} & Actividad de Exploración & Ambiente 5 -- 6 (Realidad) & 1.$^{\circ}$/2.$^{\circ}$ Año (Estadística / Operaciones) \\ \hline
+\textbf{3} & Problema de Optimización & Ambiente 1 -- 2 (Mat. Pura) & 4.$^{\circ}$/5.$^{\circ}$ Año (Álgebra y Funciones) \\ \hline
+\textbf{4} & Actividad de Exploración & Ambiente 2 (Mat. Pura) & 1.$^{\circ}$/2.$^{\circ}$ Año (Geometría y Medida) \\ \hline
+\textbf{5} & Exploración / Problema & Ambiente 1 -- 2 (Mat. Pura) & 3.$^{\circ}$/4.$^{\circ}$ Año (Álgebra y Funciones) \\ \hline
+\textbf{6} & Exploración Funcional & Ambiente 3 -- 4 (Semirrealidad) & 2.$^{\circ}$/3.$^{\circ}$ Año (Álgebra y Funciones) \\ \hline
+\textbf{8} & Ejercicio Estándar & Ambiente 1 (Mat. Pura) & 2.$^{\circ}$/3.$^{\circ}$ Año (Número / Geometría) \\ \hline
+\textbf{9} & Actividad de Investigación & Ambiente 6 (Realidad) & 4.$^{\circ}$/5.$^{\circ}$/6.$^{\circ}$ Año (Estadística) \\ \hline
+\end{tabular}
+\caption{Síntesis de clasificación y gestión curricular de las tareas analizadas.}
+\end{table}
+
+\end{document}
