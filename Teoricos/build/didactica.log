@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.22)  24 AUG 2026 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.22)  25 AUG 2026 18:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -281,25 +281,42 @@ Package pdftex.def Info: image1.png  used on input line 31.
 [1
 
 {C:/Users/maile/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image.png> <./image1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
-[2] (c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\didactica.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+
+
+[3] (c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\didactica.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3771 strings out of 468149
- 58816 string characters out of 5431082
- 468529 words of memory out of 5000000
- 32349 multiletter control sequences out of 15000+600000
- 634380 words of font info for 70 fonts, out of 8000000 for 9000
+ 3773 strings out of 468149
+ 58837 string characters out of 5431082
+ 470529 words of memory out of 5000000
+ 32350 multiletter control sequences out of 15000+600000
+ 634688 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,65p,675b,320s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\didactica.pdf (2 pages, 153938 bytes).
+<C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\didactica.pdf (3 pages, 171390 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 52 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,207 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, top=0.5cm, left=2cm, right=2cm,bottom=2cm]{geometry}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{polynom}
+\geometry{top=1.2cm}
+\title{\small Facultad de Matemática, Astronomía, Física y Computación}
+\author{Simulacro Segundo Parcial\\ GURI - La Bisagra, conduccion del CEIMAF}
+\date{29 de Agosto de 2026}
+\begin{document}
+\maketitle
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item Calcular las siguientes expresiones:
+        \begin{enumerate}
+        \item Trabajemos la forma de reescribir la división de fracciones
+        \begin{gather*}
+            \frac{\left(\frac{2}{3}\right)^{-2}}{8^{\frac{2}{3}}} \xrightarrow{\text{Reescribamoslo}} \left(\frac{2}{3}\right)^{-2} \cdot \frac{1}{8^{\frac{2}{3}}}
+        \end{gather*}
+        ahora planteamos las propiedades de la potencia sobre las fracciones cuando la potencia es negativa y cuando es fraccionaria:
+        \begin{gather*}
+            \left(\frac{2}{3}\right)^{-2}\cdot \frac{1}{8^{\frac{2}{3}}}= \left(\frac{3}{2}\right)^2 \cdot \frac{1}{\left(\sqrt[3]{8}\right)^2} 
+        \end{gather*}
+        Resolvemos primero la raiz en el denominador y ahora las potencias distribuyendo el exponente:
+        \begin{gather*}
+            \implies \frac{3^2}{2^2}\cdot \frac{1}{2^2} = \frac{9}{4} \cdot \frac{1}{4} = \frac{9 \cdot 1}{4 \cdot 4} = \frac{9}{16}
+        \end{gather*}
+        Finalmente la fracción como es irreducible es la solución de la operación.
+        \item Identifiquemos los números complejos que están actuando en esta operación, sea $z_1=1+2i$ y $z_2=i$, ahora resolvamos por partes antes de realizar el producto:
+        \begin{gather*}
+            \overline{z_1}=\overline{1+2i}=1-2i
+        \end{gather*}
+        \begin{gather*}
+            z_2^3=i^3=i^2 \cdot i = -1 \cdot i = -i
+        \end{gather*}
+        Ahora operemos todo junto:
+        \begin{gather*}
+            \overline{z_1} \cdot z_2^3 = (1-2i) \cdot (-i)
+        \end{gather*}
+        Apliquemos la propiedad distributiva y resolvamos
+        \begin{gather*}
+            1 \cdot (-i) + (-2i) \cdot (-i)= -i + 2i^2\\
+            -i + 2 (-1)= -i-2
+        \end{gather*}
+        \item Comencemos trabajando con los denominadores dentro de la raiz, siempre separando en términos y no olvidando que para sumar y restar fracciones se deben igualar los denominadores:
+        \begin{gather*}
+            \sqrt{\frac{2}{5}+\frac{1}{1+\frac{1}{1+\frac{1}{2}}}}=\sqrt{\frac{2}{5}+\frac{1}{1+\frac{1}{\frac{2}{2}+\frac{1}{2}}}}=\sqrt{\frac{2}{5}+\frac{1}{1+\frac{1}{\frac{3}{2}}}}
+        \end{gather*}
+        Recordemos que al tener una fracción en el denominador se invierte y continuamos operando:
+        \begin{gather*}
+            \sqrt{\frac{2}{5}+\frac{1}{1+\frac{2}{3}}}=\sqrt{\frac{2}{5}+\frac{1}{\frac{3}{3}+\frac{2}{3}}}=\sqrt{\frac{2}{5}+\frac{1}{\frac{5}{3}}}=\sqrt{\frac{2}{5}+\frac{3}{5}}=\sqrt{\frac{5}{5}}
+        \end{gather*}
+        Terminamos de resolver la raiz, no olvidando que en este caso la raiz es positiva, entonces el resultado es positivo 
+        \begin{gather*}
+            \implies \sqrt{1}=1
+        \end{gather*}
+        \end{enumerate}
+        \item  Completar la tabla indicando con una cruz a que conjunto/s pertenece cada uno de los resultados obtenidos en las operaciones del ítem anterior.
+            \begin{table}[H]
+                \centering
+                \resizebox{0.98\textwidth}{!}{
+                \begin{tabular}{|c|c|c|c|c|c|c|}
+                \hline
+                \ & $\mathbb{N}$(Naturales) & $\mathbb{Z}$(Enteros) & $\mathbb{Q}$(Racionales)& $\mathbb{I}$(Irracionales)& $\mathbb{R}$(Reales) & $\mathbb{C}$(Complejos) \\ \hline
+                I: 9/16 & \ & \ & X & \ & X & \ \\ \hline
+                II: $-2-i$ & \ & \ & \ & \ & \ & X \\ \hline
+                III: $1$ & X & X & X & \ & X & \ \\ \hline
+            \end{tabular}
+                }
+            \end{table}
+    \end{enumerate}
+    \item Para resolver operaciones con polinomios lo ideal es trabajar por separado con algunos términos y luego terminar de resolverlos juntos
+    \begin{enumerate}
+        \item si separamos por términos, mi prioridad es resolver primero el producto:
+        \begin{itemize}
+            \item $Q(x)\cdot S(x)$ Desarrollemos la propiedad distributiva dentro de los polinomios:
+            \begin{align*}
+                Q(x)\cdot S(x) &= (x^2-2x) \cdot (x+1)=x^2\cdot x + x^2\cdot 1 -2x\cdot x-2x\cdot 1\\
+                &=x^{2+1}+x^2-2x^{1+1}-2x= x^3+x^2-2x^2-2x\\
+                &=x^3-x^2-2x
+            \end{align*}
+            Llamemos $M(x)$ a este polinomio obtenido por el producto de Q y S
+            \item $x \cdot M(x)$ Nuevamente distribuimos en el polinomio obtenido
+            \begin{align*}
+                x\cdot M(x) &=x\cdot(x^3-x^2-2x)\\
+                &=x\cdot x^3+x\cdot(-x^2)+x\cdot(-2x)\\
+                &=x^4-x^3-2x^2
+            \end{align*}
+            Llamemos a este polinomio $U(x)$.
+            \item Por último nos queda operar con ambos términos:
+            \begin{align*}
+                P(x)-U(x) &=(x^3-10-4x)-(x^4-x^3-2x^2)\\
+                &= x^3-10-4x - x^4+x^3+2x^2
+            \end{align*}
+            Agrupamos y seguimos operando
+            \begin{align*}
+                =-x^4+x^3+x^3+2x^2-4x-10\\
+                =-x^4+2x^3+2x^2-4x-10
+            \end{align*}
+            Que es el resultado final!
+        \end{itemize}
+        \item Resolvemos la división como se conoce teniendo en cuenta los espacios, es decir, que operemos en la resta con los coeficientes que acompañan a las variables de igual grado
+        \begin{center}
+            \polylongdiv[style=D]{x^3-4x-10}{x^2-2x}
+        \end{center}
+        Como podemos ver:
+        \begin{itemize}
+            \item \textbf{Cociente:} $x+2$
+            \item \textbf{Resto:} $-10$
+        \end{itemize}
+        \item Sea $T(x)=Kx^{583}+9x^{264}+2x-7$ y como $S(x)$ es un binomio de grado uno con coeficiente principal 1, podemos aplicar el teorema del resto:\\\\
+        Conocemos que $T(x)$ por ser polinomio se puede reescribir de la forma:
+        \begin{align*}
+            T(x)=Kx^{583}+9x^{264}+2x-7=& S(x) \cdot Q(x) + R(x)\\
+            &=(x+1)\cdot Q(x)+5
+        \end{align*}
+        Restamos 5 a ambos términos y ahora sabemos que el resto tiene que ser 0
+        \begin{align*}
+            \implies Kx^{583}+9x^{264}+2x-7-5=& S(x) \cdot Q(x) + 5-5\\
+            &\implies Kx^{583}+9x^{264}+2x-12=& S(x) \cdot Q(x) \\
+            &\implies Kx^{583}+9x^{264}+2x-12=& (x+1) \cdot Q(x) 
+        \end{align*}
+        Ahora por el teorema del resto, evaluamos $x$ en $(-1)$ y trabajamos con la ecuación:
+        \begin{align*}
+            \implies K(-1)^{583}+9(-1)^{264}+2(-1)-12= ((-1)+1) \cdot Q(x)
+        \end{align*}
+        No olvidemos que cuando el exponente es par el resultado obtenido va a ser siempre positivo y cuando es impar, si la base es negativa entonces el resultado va a ser negativo, además que la potencia de 1 siempre va a ser 1, en este caso hay que tener cuidado con el signo
+        \begin{align*}
+            \implies & K(-1)+9\cdot 1+-2-12= 0 \cdot Q(x)\\
+            &-K+9-2+12=0\\
+            &19=K
+        \end{align*}
+        Y así obtenemos el valor de $K$ que buscábamos
+    \end{enumerate}
+    \item Definición de variables y planteo del sistema. Para modelar matemáticamente la situación, comenzamos asignando variables a las incógnitas que nos pide el problema:
+        \begin{itemize}
+            \item Sea $m$ la cantidad de entradas vendidas a menores de 10 años (número de menores asistentes).
+            \item Sea $a$ la cantidad de entradas vendidas a adultos (número de adultos asistentes).
+        \end{itemize}
+    A partir de los datos del enunciado, podemos establecer dos relaciones:
+    \begin{enumerate}
+        \item \textbf{Capacidad total:} Se vendieron todas las entradas para una capacidad de $160$ personas, por lo que la suma de asistentes debe ser:
+        \begin{equation}
+            m + a = 160
+        \end{equation}
+        \item \textbf{Recaudación total:} Cada menor abonó \$500 y cada adulto \$3000, acumulando un total de \$230000:
+        \begin{equation}
+            500m + 3000a = 230000
+        \end{equation}
+    \end{enumerate}
+    Por lo tanto, el sistema de ecuaciones que describe el problema es:
+    \begin{equation*}
+        \begin{cases}
+            m + a = 160 \\
+            500m + 3000a = 230000
+        \end{cases}
+    \end{equation*}
+    Pasamos a trabajar con la resolución del sistema. Podemos simplificar la ecuación de recaudación dividiendo ambos miembros por $500$:
+    \begin{align*}
+        \frac{500m + 3000a}{500} &= \frac{230000}{500} \\
+        m + 6a &= 460
+    \end{align*}
+    Ahora el sistema equivalente resulta:
+    \begin{equation*}
+        \begin{cases}
+            m + a = 160 \quad &\text{(1)} \\
+            m + 6a = 460 \quad &\text{(2)}
+        \end{cases}
+    \end{equation*}
+    Despejamos $m$ de la ecuación (1):
+    \begin{equation*}
+        m = 160 - a
+    \end{equation*}
+    Sustituimos la expresión de $m$ en la ecuación (2):
+    \begin{align*}
+        (160 - a) + 6a &= 460 \\
+        160 + 5a &= 460 \\
+        5a &= 460 - 160 \\
+        5a &= 300 \\
+        a &= \frac{300}{5} \\
+        a &= 60
+    \end{align*}
+    Con el valor de $a = 60$, calculamos la cantidad de menores $m$:
+    \begin{equation*}
+        m = 160 - 60 = 100
+    \end{equation*}
+    Entonces podemos concluir que asistieron \textbf{100 menores de 10 años} y \textbf{60 adultos} al concierto.
+    \item Ejercicio 4:
+    \begin{enumerate}
+        \item  Dominio y valores donde no está definida la ecuación:
+        Una expresión algebraica fraccionaria no está definida para aquellos valores de la variable que anulen el denominador, puesto que la división por cero no está permitida en los números reales.
+    \begin{equation*}
+        \implies x^4 - 5x^2 + 4 = 0
+    \end{equation*}
+    Una expresión algebraica fraccionaria no está definida para aquellos valores de la variable que anulen el denominador, puesto que la división por cero no está permitida en los números reales.
+    \end{enumerate}
+\end{enumerate}
+\end{document}
