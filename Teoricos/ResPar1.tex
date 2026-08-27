@@ -51,32 +51,32 @@
             1 \cdot (-i) + (-2i) \cdot (-i)= -i + 2i^2\\
             -i + 2 (-1)= -i-2
         \end{gather*}
-        \item Comencemos trabajando con los denominadores dentro de la raiz, siempre separando en términos y no olvidando que para sumar y restar fracciones se deben igualar los denominadores:
+        \item Comencemos trabajando con los denominadores dentro de la raiz, siempre separando en términos y no olvidando que para sumar y restar fracciones una manera de resolución mas ordenada es igualar los denominadores:
         \begin{gather*}
             \sqrt{\frac{2}{5}+\frac{1}{1+\frac{1}{1+\frac{1}{2}}}}=\sqrt{\frac{2}{5}+\frac{1}{1+\frac{1}{\frac{2}{2}+\frac{1}{2}}}}=\sqrt{\frac{2}{5}+\frac{1}{1+\frac{1}{\frac{3}{2}}}}
         \end{gather*}
-        Recordemos que al tener una fracción en el denominador se invierte y continuamos operando:
+        Al tener 1 en el numerador podemos reescribir esta fracción como el inverso de su numerador        
         \begin{gather*}
             \sqrt{\frac{2}{5}+\frac{1}{1+\frac{2}{3}}}=\sqrt{\frac{2}{5}+\frac{1}{\frac{3}{3}+\frac{2}{3}}}=\sqrt{\frac{2}{5}+\frac{1}{\frac{5}{3}}}=\sqrt{\frac{2}{5}+\frac{3}{5}}=\sqrt{\frac{5}{5}}
         \end{gather*}
-        Terminamos de resolver la raiz, no olvidando que en este caso la raiz es positiva, entonces el resultado es positivo 
+        Terminamos de resolver la raiz, no olvidando que la raiz es siempre positiva, entonces el resultado es positivo 
         \begin{gather*}
             \implies \sqrt{1}=1
         \end{gather*}
-        \end{enumerate}
-        \item  Completar la tabla indicando con una cruz a que conjunto/s pertenece cada uno de los resultados obtenidos en las operaciones del ítem anterior.
-            \begin{table}[H]
-                \centering
-                \resizebox{0.98\textwidth}{!}{
-                \begin{tabular}{|c|c|c|c|c|c|c|}
-                \hline
-                \ & $\mathbb{N}$(Naturales) & $\mathbb{Z}$(Enteros) & $\mathbb{Q}$(Racionales)& $\mathbb{I}$(Irracionales)& $\mathbb{R}$(Reales) & $\mathbb{C}$(Complejos) \\ \hline
-                I: 9/16 & \ & \ & X & \ & X & \ \\ \hline
-                II: $-2-i$ & \ & \ & \ & \ & \ & X \\ \hline
-                III: $1$ & X & X & X & \ & X & \ \\ \hline
-            \end{tabular}
-                }
-            \end{table}
+    \end{enumerate}
+    \item  Completar la tabla indicando con una cruz a que conjunto/s pertenece cada uno de los resultados obtenidos en las operaciones del ítem anterior.
+        \begin{table}[H]
+            \centering
+            \resizebox{0.98\textwidth}{!}{
+            \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            \ & $\mathbb{N}$(Naturales) & $\mathbb{Z}$(Enteros) & $\mathbb{Q}$(Racionales)& $\mathbb{I}$(Irracionales)& $\mathbb{R}$(Reales) & $\mathbb{C}$(Complejos) \\ \hline
+            I: 9/16 & \ & \ & X & \ & X & X \\ \hline
+            II: $-2-i$ & \ & \ & \ & \ & \ & X \\ \hline
+            III: $1$ & X & X & X & \ & X & X \\ \hline
+        \end{tabular}
+            }
+        \end{table}
     \end{enumerate}
     \item Para resolver operaciones con polinomios lo ideal es trabajar por separado con algunos términos y luego terminar de resolverlos juntos
     \begin{enumerate}
@@ -101,14 +101,14 @@
                 P(x)-U(x) &=(x^3-10-4x)-(x^4-x^3-2x^2)\\
                 &= x^3-10-4x - x^4+x^3+2x^2
             \end{align*}
-            Agrupamos y seguimos operando
+            Ordenamos y seguimos operando
             \begin{align*}
                 =-x^4+x^3+x^3+2x^2-4x-10\\
                 =-x^4+2x^3+2x^2-4x-10
             \end{align*}
             Que es el resultado final!
         \end{itemize}
-        \item Resolvemos la división como se conoce teniendo en cuenta los espacios, es decir, que operemos en la resta con los coeficientes que acompañan a las variables de igual grado
+        \item Resolvemos la división como se conoce teniendo en cuenta que es importante completar el polinomio con las variables de grados faltantes y menores a la de grado mayor presente y ponerles un coeficiente 0 para así poder dividir más ordenadamente:
         \begin{center}
             \polylongdiv[style=D]{x^3-4x-10}{x^2-2x}
         \end{center}
@@ -117,27 +117,27 @@
             \item \textbf{Cociente:} $x+2$
             \item \textbf{Resto:} $-10$
         \end{itemize}
-        \item Sea $T(x)=Kx^{583}+9x^{264}+2x-7$ y como $S(x)$ es un binomio de grado uno con coeficiente principal 1, podemos aplicar el teorema del resto:\\\\
-        Conocemos que $T(x)$ por ser polinomio se puede reescribir de la forma:
+        \item Sea $T(x)=Kx^{583}+9x^{264}+2x-7$ y como $S(x)$ es un binomio de grado uno con coeficiente principal 1, conocemos que $T(x)$ por ser polinomio se puede reescribir de la forma:
         \begin{align*}
-            T(x)=Kx^{583}+9x^{264}+2x-7=& S(x) \cdot Q(x) + R(x)\\
-            &=(x+1)\cdot Q(x)+5
+            T(x)=Kx^{583}+9x^{264}+2x-7=& S(x) \cdot C(x) + R(x)\\
+            &=(x+1)\cdot C(x)+5
         \end{align*}
         Restamos 5 a ambos términos y ahora sabemos que el resto tiene que ser 0
         \begin{align*}
-            \implies Kx^{583}+9x^{264}+2x-7-5=& S(x) \cdot Q(x) + 5-5\\
-            &\implies Kx^{583}+9x^{264}+2x-12=& S(x) \cdot Q(x) \\
-            &\implies Kx^{583}+9x^{264}+2x-12=& (x+1) \cdot Q(x) 
+            \implies Kx^{583}+9x^{264}+2x-7-5=& S(x) \cdot C(x) + 5-5\\
+            &\implies Kx^{583}+9x^{264}+2x-12=& S(x) \cdot C(x) \\
+            &\implies Kx^{583}+9x^{264}+2x-12=& (x+1) \cdot C(x) 
         \end{align*}
         Ahora por el teorema del resto, evaluamos $x$ en $(-1)$ y trabajamos con la ecuación:
         \begin{align*}
-            \implies K(-1)^{583}+9(-1)^{264}+2(-1)-12= ((-1)+1) \cdot Q(x)
+            \implies K(-1)^{583}+9(-1)^{264}+2(-1)-12= ((-1)+1) \cdot C(x)
         \end{align*}
         No olvidemos que cuando el exponente es par el resultado obtenido va a ser siempre positivo y cuando es impar, si la base es negativa entonces el resultado va a ser negativo, además que la potencia de 1 siempre va a ser 1, en este caso hay que tener cuidado con el signo
         \begin{align*}
-            \implies & K(-1)+9\cdot 1+-2-12= 0 \cdot Q(x)\\
-            &-K+9-2+12=0\\
-            &19=K
+            \implies & K(-1)+9\cdot 1+(-2)-12= 0 \cdot C(x)\\
+            &-K+9-2-12=0\\
+            &9-2-12=K\\
+            &5=K
         \end{align*}
         Y así obtenemos el valor de $K$ que buscábamos
     \end{enumerate}
@@ -196,12 +196,94 @@
     Entonces podemos concluir que asistieron \textbf{100 menores de 10 años} y \textbf{60 adultos} al concierto.
     \item Ejercicio 4:
     \begin{enumerate}
-        \item  Dominio y valores donde no está definida la ecuación:
+        \item  Valores donde no está definida la ecuación:
         Una expresión algebraica fraccionaria no está definida para aquellos valores de la variable que anulen el denominador, puesto que la división por cero no está permitida en los números reales.
-    \begin{equation*}
-        \implies x^4 - 5x^2 + 4 = 0
-    \end{equation*}
-    Una expresión algebraica fraccionaria no está definida para aquellos valores de la variable que anulen el denominador, puesto que la división por cero no está permitida en los números reales.
+        \begin{equation*}
+            \implies x^4 - 5x^2 + 4 = 0
+        \end{equation*}
+        Realizamos el cambio de variable $u = x^2$ (con $u \ge 0$):
+        \begin{equation*}
+            u^2 - 5u + 4 = 0
+        \end{equation*}
+
+        Factorizamos el trinomio trabajando con las raices de la ecuación cuadrática
+        \begin{align*}
+            u_{1,2}&= \frac{-b \pm \sqrt{b^2-4ac}}{2a} = \frac{5 \pm \sqrt{(-5)^2-4\cdot 1 \cdot 4}}{2\cdot 1}\\
+            &=\frac{5 \pm \sqrt{25-16}}{2}\\
+            &=\frac{5 \pm \sqrt{9}}{2}\\
+            &=\frac{5 \pm 3}{2}\\
+            &\implies u_1=\frac{5 + 3}{2}= \frac{8}{2}=4, u_2=\frac{5 - 3}{2}=\frac{2}{2}=1
+        \end{align*}
+        Es decir, $u^2 - 5u + 4$ es equivalente a $(u - 4)(u - 1)$, así es fácil ver los valores de $u$ que me provocan 0 en el denominador. Volviendo a la variable original $x$:
+        \begin{itemize}
+            \item Si $x^2 = 4 \implies x = 2 \quad \text{o} \quad x = -2$
+            \item Si $x^2 = 1 \implies x = 1 \quad \text{o} \quad x = -1$
+        \end{itemize}
+        La ecuación \textbf{no está definida} para $x \in \{-2, -1, 1, 2\}$, ya que para estos valores el denominador se anula provocando una indeterminación.
+        \item Factorización, simplificación y conjunto solución:
+            \begin{itemize}
+                \item \textbf{Factorización del numerador:} $P(x) = x^3 + 2x^2 - 4x - 8$. \\
+                    Aplicamos factor común por grupos:
+                    \begin{align*}
+                        P(x) &= x^2(x + 2) - 4(x + 2) \\
+                        &= (x^2 - 4)(x + 2) \\
+                    \end{align*}
+                    Identificamos la diferencia de cuadrados y la reescribimos:
+                    \begin{align*}
+                        &= (x - 2)(x + 2)(x + 2) \\
+                        &= (x - 2)(x + 2)^2
+                    \end{align*}
+
+                \item \textbf{Factorización del denominador:} $Q(x) = x^4 - 5x^2 + 4$. \\
+                    Usando las raíces obtenidas en el inciso anterior:
+                    \begin{align*}
+                        Q(x) &= (x^2 - 4)(x^2 - 1) \\
+                        &= (x - 2)(x + 2)(x - 1)(x + 1)
+                    \end{align*}
+            \end{itemize}
+
+            Reemplazamos las expresiones factorizadas en la ecuación para $x \notin \{-2, -1, 1, 2\}$:
+            \begin{equation*}
+                \frac{(x - 2)(x + 2)^2}{(x - 2)(x + 2)(x - 1)(x + 1)} = -2
+            \end{equation*}
+
+            Simplificamos cancelando los factores comunes $(x - 2)$ y $(x + 2)$:
+            \begin{align*}
+                \frac{x + 2}{(x - 1)(x + 1)} &= -2 \\
+                \frac{x + 2}{x^2 - 1} &= -2
+            \end{align*}
+
+            Multiplicamos ambos miembros por $(x^2 - 1)$ (sabiendo que $x \neq \pm 1$):
+            \begin{align*}
+                x + 2 &= -2(x^2 - 1) \\
+                x + 2 &= -2x^2 + 2
+            \end{align*}
+
+            Igualamos a cero pasando todos los términos al primer miembro:
+            \begin{align*}
+                2x^2 + x + 2 - 2 &= 0 \\
+                2x^2 + x &= 0
+            \end{align*}
+
+            Sacamos factor común $x$:
+            \begin{equation*}
+                x(2x + 1) = 0
+            \end{equation*}
+
+            Esto genera dos posibles soluciones:
+            \begin{enumerate}
+                \item $x_1 = 0$
+                \item $2x + 1 = 0 \implies 2x = -1 \implies x_2 = -\frac{1}{2}$
+            \end{enumerate}
+        \vspace{0.3cm}
+        \textbf{Verificación de restricciones:} 
+        Comprobamos que ni $x = 0$ ni $x = -\frac{1}{2}$ pertenezcan al conjunto de valores no permitidos $\{-2, -1, 1, 2\}$. Como ambos valores están dentro del dominio de definición, los dos son soluciones válidas.
+
+        \vspace{0.3cm}
+        \noindent \textbf{Conjunto solución:}
+        \begin{equation*}
+            S = \left\{ -\frac{1}{2}, \, 0 \right\}
+        \end{equation*}
     \end{enumerate}
 \end{enumerate}
 \end{document}
