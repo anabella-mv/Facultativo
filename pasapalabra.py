@@ -1,9 +1,9 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox, ttk
 import math
 import unicodedata
 
-#PREGUNTAS DEK ROSCO
+# PREGUNTAS DEL ROSCO
 ROSCO = [
     {"letra": "A", "tipo": "Empieza con", "pista": "Medida de la superficie que ocupa una figura geométrica.", "respuesta": "area"},
     {"letra": "B", "tipo": "Empieza con", "pista": "Semirrecta que divide a un ángulo exactamente en dos partes iguales.", "respuesta": "bisectriz"},
@@ -14,7 +14,7 @@ ROSCO = [
     {"letra": "G", "tipo": "Empieza con", "pista": "Unidad de medida angular del sistema sexagesimal (°).", "respuesta": "grado"},
     {"letra": "H", "tipo": "Empieza con", "pista": "Lado de mayor longitud en un triángulo rectángulo, opuesto al ángulo recto.", "respuesta": "hipotenusa"},
     {"letra": "I", "tipo": "Empieza con", "pista": "Desigualdad entre dos expresiones algebraicas (usa <, >, <= o >=).", "respuesta": "inecuacion"},
-    {"letra": "J", "tipo": "Contiene la", "pista": "En análisis multivariable y álgebra, matriz de derivadas parciales (o su determinante).", "respuesta": "jacobiano"},
+    {"letra": "J", "tipo": "Contiene la", "pista": "Línea recta de referencia que se utiliza para medir distancias, ubicar puntos o definir la simetría de una figura", "respuesta": "eje"},
     {"letra": "L", "tipo": "Empieza con", "pista": "Operación inversa a la exponenciación; exponente al que hay que elevar una base.", "respuesta": "logaritmo"},
     {"letra": "M", "tipo": "Empieza con", "pista": "Valor con mayor frecuencia absoluta dentro de un conjunto de datos estadísticos.", "respuesta": "moda"},
     {"letra": "N", "tipo": "Empieza con", "pista": "Término superior de una fracción que indica cuántas partes se toman de la unidad.", "respuesta": "numerador"},
@@ -26,10 +26,10 @@ ROSCO = [
     {"letra": "U", "tipo": "Empieza con", "pista": "Operación entre conjuntos que reúne todos los elementos sin duplicarlos.", "respuesta": "union"},
     {"letra": "V", "tipo": "Empieza con", "pista": "Punto extremo de una parábola o punto de intersección de lados de un polígono.", "respuesta": "vertice"},
     {"letra": "X", "tipo": "Contiene la", "pista": "Valor máximo o punto más alto alcanzado por una función en su dominio.", "respuesta": "maximo"},
-    {"letra": "Z", "tipo": "Contiene la", "pista": "Cuadrilátero convexo que tiene exactamente dos lados paralelos.", "respuesta": "trapecio"}
+    {"letra": "Z", "tipo": "Contiene la", "pista": "Cuadrilátero que no tiene ningún lado paralelo a otro", "respuesta": "trapezoide"}
 ]
 
-#Colores necesarios para el roscooooo
+# Colores
 COLOR_PENDIENTE = "#2b6cb0"  # Azul
 COLOR_ACTUAL = "#ecc94b"     # Amarillo
 COLOR_ACIERTO = "#38a169"    # Verde
@@ -47,16 +47,17 @@ class PasapalabraGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Pasapalabra Matemático - Secundaria")
-        self.root.geometry("1020x880")
+        self.root.geometry("920x780")
         self.root.configure(bg=COLOR_FONDO)
         self.root.resizable(False, False)
 
         # Estado del juego
-        self.tiempo_restante = 300 # 300 segundos
+        self.tiempo_restante = 360
         self.timer_id = None
         self.aciertos = 0
         self.errores = 0
         self.estados = ["pendiente"] * len(ROSCO)
+        self.respuestas_usuario = [""] * len(ROSCO)  # Guardar lo que escribió el usuario
         self.pendientes = list(range(len(ROSCO)))
         self.indice_turno = 0
 
@@ -66,7 +67,6 @@ class PasapalabraGUI:
         self._iniciar_temporizador()
 
     def _crear_interfaz(self):
-        # Panel superior: Estadísticas y Temporizador
         panel_top = tk.Frame(self.root, bg=COLOR_FONDO)
         panel_top.pack(fill="x", padx=20, pady=10)
 
@@ -79,18 +79,15 @@ class PasapalabraGUI:
         self.lbl_tiempo = tk.Label(panel_top, text=f"Tiempo: {self.tiempo_restante}s", font=("Arial", 16, "bold"), fg="#ecc94b", bg=COLOR_FONDO)
         self.lbl_tiempo.pack(side="right")
 
-        # Lienzo del Rosco Circular
         self.canvas = tk.Canvas(self.root, width=420, height=420, bg=COLOR_FONDO, highlightthickness=0)
         self.canvas.pack(pady=5)
 
-        # Panel de Pregunta y Entrada
         self.lbl_tipo = tk.Label(self.root, text="", font=("Arial", 12, "italic"), fg="#a0aec0", bg=COLOR_FONDO)
         self.lbl_tipo.pack()
 
         self.lbl_pista = tk.Label(self.root, text="", font=("Arial", 11), fg="white", bg=COLOR_FONDO, wraplength=700, justify="center", height=3)
         self.lbl_pista.pack(pady=5)
 
-        # Entrada de texto y botones
         panel_input = tk.Frame(self.root, bg=COLOR_FONDO)
         panel_input.pack(pady=5)
 
@@ -111,7 +108,6 @@ class PasapalabraGUI:
         total = len(ROSCO)
 
         for i, item in enumerate(ROSCO):
-            # Ángulo distribuido equitativamente empezando desde arriba (-90°)
             angulo = math.radians((i / total) * 360 - 90)
             x = cx + r * math.cos(angulo)
             y = cy + r * math.sin(angulo)
@@ -163,7 +159,8 @@ class PasapalabraGUI:
             return
 
         idx_actual = self.pendientes[self.indice_turno]
-        respuesta_usuario = normalizar(self.entry_resp.get())
+        texto_ingresado = self.entry_resp.get()
+        respuesta_usuario = normalizar(texto_ingresado)
         respuesta_correcta = ROSCO[idx_actual]["respuesta"]
 
         if not respuesta_usuario:
@@ -172,6 +169,8 @@ class PasapalabraGUI:
         if respuesta_usuario in ["pasapalabra", "p"]:
             self.pasapalabra()
             return
+
+        self.respuestas_usuario[idx_actual] = texto_ingresado.strip()
 
         if respuesta_usuario == respuesta_correcta:
             self.estados[idx_actual] = "acierto"
@@ -193,6 +192,115 @@ class PasapalabraGUI:
         self.indice_turno = (self.indice_turno + 1) % len(self.pendientes)
         self._mostrar_pregunta_actual()
 
+    def _mostrar_ventana_revision(self):
+        """Abre una ventana con el detalle de errores y letras sin responder."""
+        ventana_rev = tk.Toplevel(self.root)
+        ventana_rev.title("Revisión de Respuestas")
+        ventana_rev.geometry("750x550")
+        ventana_rev.configure(bg="#2d3748")
+
+        lbl_titulo = tk.Label(
+            ventana_rev, 
+            text="Detalle de Respuestas Incorrectas y No Respondidas", 
+            font=("Arial", 14, "bold"), 
+            fg="white", 
+            bg="#2d3748"
+        )
+        lbl_titulo.pack(pady=12)
+
+        # Contenedor con Scrollbar
+        frame_scroll = tk.Frame(ventana_rev, bg="#2d3748")
+        frame_scroll.pack(fill="both", expand=True, padx=15, pady=5)
+
+        canvas_rev = tk.Canvas(frame_scroll, bg="#1a202c", highlightthickness=0)
+        scrollbar = ttk.Scrollbar(frame_scroll, orient="vertical", command=canvas_rev.yview)
+        scrollable_frame = tk.Frame(canvas_rev, bg="#1a202c")
+
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas_rev.configure(scrollregion=canvas_rev.bbox("all"))
+        )
+        canvas_rev.create_window((0, 0), window=scrollable_frame, anchor="nw", width=700)
+        canvas_rev.configure(yscrollcommand=scrollbar.set)
+
+        canvas_rev.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+
+        # Generar lista de revisión
+        hay_pendientes_o_errores = False
+        for i, item in enumerate(ROSCO):
+            estado = self.estados[i]
+            if estado in ["error", "pendiente"]:
+                hay_pendientes_o_errores = True
+                color_tarjeta = "#742a2a" if estado == "error" else "#2c5282"
+                tipo_texto = "❌ ERROR" if estado == "error" else "⏳ SIN RESPONDER"
+
+                card = tk.Frame(scrollable_frame, bg=color_tarjeta, bd=1, relief="solid")
+                card.pack(fill="x", padx=10, pady=6, ipadx=5, ipady=5)
+
+                lbl_letra = tk.Label(
+                    card, 
+                    text=f"[{item['letra']}] {tipo_texto} ({item['tipo']} {item['letra']})", 
+                    font=("Arial", 11, "bold"), 
+                    fg="#fbd38d", 
+                    bg=color_tarjeta, 
+                    anchor="w"
+                )
+                lbl_letra.pack(fill="x", padx=5, pady=2)
+
+                lbl_pista = tk.Label(
+                    card, 
+                    text=f"Definición: {item['pista']}", 
+                    font=("Arial", 10), 
+                    fg="white", 
+                    bg=color_tarjeta, 
+                    wraplength=660, 
+                    justify="left", 
+                    anchor="w"
+                )
+                lbl_pista.pack(fill="x", padx=5, pady=1)
+
+                if estado == "error":
+                    lbl_ingresada = tk.Label(
+                        card, 
+                        text=f"Tu respuesta: \"{self.respuestas_usuario[i]}\"", 
+                        font=("Arial", 10, "italic"), 
+                        fg="#fed7d7", 
+                        bg=color_tarjeta, 
+                        anchor="w"
+                    )
+                    lbl_ingresada.pack(fill="x", padx=5, pady=1)
+
+                lbl_correcta = tk.Label(
+                    card, 
+                    text=f"Respuesta correcta: {item['respuesta'].upper()}", 
+                    font=("Arial", 10, "bold"), 
+                    fg="#9ae6b4", 
+                    bg=color_tarjeta, 
+                    anchor="w"
+                )
+                lbl_correcta.pack(fill="x", padx=5, pady=2)
+
+        if not hay_pendientes_o_errores:
+            lbl_felicidades = tk.Label(
+                scrollable_frame, 
+                text="¡Felicitaciones! ¡Acertaste todas las letras del rosco! 🏆", 
+                font=("Arial", 13, "bold"), 
+                fg="#68d391", 
+                bg="#1a202c"
+            )
+            lbl_felicidades.pack(pady=40)
+
+        btn_cerrar = tk.Button(
+            ventana_rev, 
+            text="Cerrar Revisión", 
+            font=("Arial", 11, "bold"), 
+            bg="#4a5568", 
+            fg="white", 
+            command=ventana_rev.destroy
+        )
+        btn_cerrar.pack(pady=10)
+
     def _finalizar_juego(self, motivo):
         if self.timer_id:
             self.root.after_cancel(self.timer_id)
@@ -206,9 +314,11 @@ class PasapalabraGUI:
             f"• Aciertos: {self.aciertos}\n"
             f"• Errores: {self.errores}\n"
             f"• No respondidas: {len(self.pendientes)}\n"
-            f"• Porcentaje: {(self.aciertos / len(ROSCO)) * 100:.1f}%"
+            f"• Porcentaje: {(self.aciertos / len(ROSCO)) * 100:.1f}%\n\n"
+            f"Haz clic en Aceptar para ver la revisión de respuestas."
         )
         messagebox.showinfo("Fin de la Partida", mensaje)
+        self._mostrar_ventana_revision()
 
 if __name__ == "__main__":
     ventana = tk.Tk()
