@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1790993503.9642 "c:/Users/maile/OneDrive/Desktop/Facultativo/Teoricos/ResPar2.tex" "build/ResPar2.pdf" "ResPar2" 1790993505.0119 0
+["pdflatex"] 1791048373.11267 "c:/Users/maile/OneDrive/Desktop/Facultativo/Teoricos/ResPar2.tex" "build/ResPar2.pdf" "ResPar2" 1791048374.01448 0
   "C:/Users/maile/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1790992751 82011 97247c01f6bfb6f6d0c40fab12a08423 ""
   "C:/Users/maile/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1770319395 14064 56bc4db3ccda63c58e8e08795dbdd1a8 ""
   "C:/Users/maile/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1753226956 13254313 bbe0aa9d4c0ea772a5cdd7d7ce6dcabd ""
@@ -77,9 +77,9 @@
   "Figura2.png" 1790990794 151334 8976eeaec11d92455857a726b6740312 ""
   "Figura3.jpg" 1790990770 19158 d7dc3d78e96e0494c83ef2eae9991674 ""
   "Figura4.png" 1790983310 38711 02004163cc103e2debeba58323542dd7 ""
-  "ResPar2.tex" 1790993501 14163 3143b2ccfd8fbf8e13605d8a6fe33e55 ""
-  "build/ResPar2.aux" 1790993504 869 6f8518d45777f9143f9cb9f18461e203 "pdflatex"
-  "c:/Users/maile/OneDrive/Desktop/Facultativo/Teoricos/ResPar2.tex" 1790993501 14163 3143b2ccfd8fbf8e13605d8a6fe33e55 ""
+  "ResPar2.tex" 1791048372 12494 1dd5309df2a77b926dc803dcd6b56923 ""
+  "build/ResPar2.aux" 1791048373 869 e09cf346cf20e0044fbeab17a948a0ca "pdflatex"
+  "c:/Users/maile/OneDrive/Desktop/Facultativo/Teoricos/ResPar2.tex" 1791048372 12494 1dd5309df2a77b926dc803dcd6b56923 ""
   "popnegro.pdf" 1790993180 13409 299db1301aacc066a9ede655eabfed10 ""
   (generated)
   "build/ResPar2.aux"

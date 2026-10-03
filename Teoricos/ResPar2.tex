@@ -77,71 +77,49 @@
             \item \textbf{P}: personas que prefieren "Pobre Johnny" como radio.
             \item \textbf{S}: personas que prefieren "Sucesos" como radio.
         \end{itemize}
-        Notemos las cantidades de cada conjunto con $\#$ e interpretemos las operaciones entre conjuntos que implican las relaciones en el enunciado:
+        %Notemos las cantidades de cada conjunto con $$ e interpretemos las operaciones entre conjuntos que implican las relaciones en el enunciado:
         \begin{itemize}
             \item Tienen de preferencia dos radios: que una misma persona tenga de preferencia a dos radios distintas quiere decir que pertenece a ambos conjuntos y por consecuente a la intersección de los conjuntos de esas radios, por lo tanto lo representamos con $\cap$ entre los dos conjuntos.
             \item Tienen de preferencia las tres emisoras: que una misma persona tenga de preferencia a las tres radios distintas quiere decir que pertenece a los tres conjuntos y por consecuente a la intersección de los conjuntos de esas radios, por lo tanto lo representamos con $C\cap P \cap S$
         \end{itemize}
         Entonces los datos que tenemos lo podemos representar de la siguiente manera:
         \begin{itemize}
-            \item $\#U=\#(C\cup P\cup S)=545$
-            \item $\#C=277$
-            \item $\#P=233$
-            \item $\#S=405$
-            \item $\#(P\cap S)=165$
-            \item $\#(P\cap C)=120$
-            \item $\#(C\cap S)=190$
-            \item $\#(C\cap P \cap S)=105$
+            \item $U=(C\cup P\cup S)=545$
+            \item $C=277$
+            \item $P=233$
+            \item $S=405$
+            \item $(P\cap S)=165$
+            \item $(P\cap C)=120$
+            \item $(C\cap S)=190$
+            \item $(C\cap P \cap S)=105$
         \end{itemize}
         \begin{enumerate}
-            \item Tenemos que identificar a quienes únicamente prefieren la cadena 3, es decir, a quienes pertenecen al conjunto C pero no a los conjuntos P ni S. Esto se representa como $C-(P\cup S)$ y su cardinalidad se calcula de la siguiente manera: De los 277 oyentes totales, hay que restar a los 105 que escuchan las 3 radios, que también están contenidos en aquellos que tienen de preferencia a la Cadena 3 y otra emisora:
-            \begin{itemize}
-                \item $\#(C\cap P)=120$ oyentes que escuchan la Cadena 3 y Pobre Johnny, de estos 105 oyentes escuchan también Sucesos, por lo tanto hay $120-105=15$ oyentes que escuchan únicamente la Cadena 3 y Pobre Johnny.
-                \item $\#(C\cap S)=190$ oyentes que escuchan la Cadena 3 y Sucesos, de estos 105 oyentes escuchan también Pobre Johnny, por lo tanto hay $190-105=85$ oyentes que escuchan únicamente la Cadena 3 y Sucesos.
-            \end{itemize}
+            \item Tenemos que identificar a quienes únicamente prefieren la cadena 3, es decir, a quienes pertenecen al conjunto C pero no a los conjuntos P ni S. Esto se representa como $C-(P\cup S)$ y su cardinalidad se calcula de la siguiente manera:\\
+            De los 277 oyentes totales, hay que restar a quienes aunque escuchen esta radio, escuchen también alguna de las otras pero no olvidemos que el conjunto de intersección entre los tres oyentes está incluido en $(C\cap P)$ y $(C\cap S)$, por lo tanto hay que sumarlo nuevamente para no restarlo dos veces:
             \begin{gather*}
-                \#(C-(P\cup S))=\#C-\#(C\cap P)-\#(C\cap S)+\#(C\cap P \cap S)\\
-                \#(C-(P\cup S))=277-15-85-105\\
-                \#(C-(P\cup S))=277-205\\
-                \#(C-(P\cup S))=72
-            \end{gather*}
-            U otro modo de calcularlo es usando la propiedad de la diferencia de conjuntos y la ley de Morgan:
-            \begin{gather*}
-                \#(C-(P\cup S))=\#C-\#(C\cap (P\cup S))\\
-                \#(C-(P\cup S))=\#C-\#((C\cap P)\cup (C\cap S))\\
-                \#(C-(P\cup S))=\#C-(\#(C\cap P)+\#(C\cap S)-\#(C\cap P \cap S))\\
-                \#(C-(P\cup S))=277-(120+190-105)\\
-                \#(C-(P\cup S))=277-205\\
-                \#(C-(P\cup S))=72
+                (C-(P\cup S))=C-(C\cap P)-(C\cap S)+(C\cap P \cap S)\\
+                (C-(P\cup S))=277-120-190+105\\
+                (C-(P\cup S))=277-310+105\\
+                (C-(P\cup S))=382-310\\
+                (C-(P\cup S))=72
             \end{gather*}
             \item Para calcular a quienes prefieren Pobre Johnny y Sucesos pero no escuchan Cadena 3, es decir, a quienes pertenecen al conjunto $(P\cap S)-C$ y su cardinalidad se calcula de la siguiente manera:
-            \item \begin{gather*}
-                \#((P\cap S)-C)=\#(P\cap S)-\#(C\cap P \cap S)\\
-                \#((P\cap S)-C)=165-105\\
-                \#((P\cap S)-C)=60
-            \end{gather*}
-            \item Para calcular a quienes prefieren escuchar únicamente Sucesos, es decir, a quienes pertenecen al conjunto $S-(C\cup P)$, su cardinalidad se calcula de la siguiente manera: De los 405 oyentes totales, hay que restar a los 105 que escuchan las 3 radios, que también están contenidos en aquellos que tienen de preferencia a Sucesos y otra emisora:
-            \begin{itemize}
-                \item $\#(C\cap S)=190$ oyentes que escuchan la Cadena 3 y Sucesos, de estos 105 oyentes escuchan también Pobre Johnny, por lo tanto hay $190-105=85$ oyentes que escuchan únicamente la Cadena 3 y Sucesos.
-                \item $\#(P\cap S)=165$ oyentes que escuchan Pobre Johnny y Sucesos, de estos 105 oyentes escuchan también la Cadena 3, por lo tanto hay $165-105=60$ oyentes que escuchan únicamente Pobre Johnny y Sucesos.
-            \end{itemize}
             \begin{gather*}
-                \#(S-(C\cup P))=\#S-\#(C\cap S)-\#(P\cap S)+\#(C\cap P \cap S)\\
-                \#(S-(C\cup P))=405-85-60-105\\
-                \#(S-(C\cup P))=405-250\\
-                \#(S-(C\cup P))=155
+                ((P\cap S)-C)=(P\cap S)-(C\cap P \cap S)\\
+                ((P\cap S)-C)=165-105\\
+                ((P\cap S)-C)=60
             \end{gather*}
-            U otro modo de calcularlo es usando la propiedad de la diferencia de conjuntos y la ley de Morgan:
+            \item Para calcular a quienes prefieren escuchar únicamente Sucesos, es decir, quienes pertenecen al conjunto $S$ pero no a los conjuntos $C$ ni $P$. Esto se representa como $S-(C\cup P)$ y su cardinalidad se calcula de la siguiente manera:\\
+            De los 405 oyentes totales, hay que restar a quienes aunque escuchen esta radio, escuchen también alguna de las otras pero no olvidemos que el conjunto de intersección entre los tres oyentes está incluido en $(C\cap P)$ y $(P\cap S)$, por lo tanto hay que sumarlo nuevamente para no restarlo dos veces:
             \begin{gather*}
-                \#(S-(C\cup P))=\#S-\#(S\cap (C\cup P))\\
-                \#(S-(C\cup P))=\#S-\#((S\cap C)\cup (S\cap P))\\
-                \#(S-(C\cup P))=\#S-(\#(S\cap C)+\#(S\cap P)-\#(C\cap P \cap S))\\
-                \#(S-(C\cup P))=405-(190+165-105)\\
-                \#(S-(C\cup P))=405-250\\
-                \#(S-(C\cup P))=155
+                (S-(C\cup P))=S-(C\cap S)-(P\cap S)+(C\cap P \cap S)\\
+                (S-(C\cup P))=405-190-165+105\\
+                (S-(C\cup P))=405-355+105\\
+                (S-(C\cup P))=510-355\\
+                (S-(C\cup P))=155
             \end{gather*}
 
-            \begin{figure}[h!]
+            \begin{figure}[H]
                 \centering
                 \includegraphics[scale=0.5]{Figura2.png}
                 \caption{Diagrama de Venn}
@@ -162,24 +140,22 @@
                 \item Expresar $B$ como intervalo: $B=[6,\infty)$
                 \item Expresar $C$ por extensión: $C=\left\{-1,0,3\right\}$
             \end{itemize}
-            \item La representación en la recta numérica:
             
-            \begin{figure}[h!]
+            \item La representación en la recta numérica:
+            \begin{figure}[htb]
                 \centering
                 \includegraphics[scale=0.6]{Figura3.jpg}
                 \caption{Representación en la recta numérica}
                 \label{fig:Figura3}
             \end{figure}
             \item $A \times C$ es el conjunto de los pares ordenados $(x,y)$ tal que $x$ está en $A$ e $y$ está en $C$. Para graficar la región, represento $A$ sobre el Eje $X$ y $C$ sobre el Eje $Y$, luego grafico $A$ sobre las rectas que pasan por los valores de $C$ representados en el Eje $Y$
-        \end{enumerate}
-        
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=0.5]{Figura4.png}
                 \caption{Producto cartesiano $A \times C$}
                 \label{fig:Figura4}
             \end{figure}
-
+        \end{enumerate}
         \item 
             \begin{enumerate}
                 \item \begin{enumerate}
