@@ -1,5 +1,5 @@
-\documentclass[11pt]{article}
-\usepackage[a4paper, top=0.5cm, left=2cm, right=2cm,bottom=2cm]{geometry}
+\documentclass[12pt]{article}
+\usepackage[a4paper, top=0.5cm, left=1cm, right=2cm,bottom=2cm]{geometry}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{mathtools}
@@ -7,17 +7,32 @@
 \usepackage{multicol}
 \usepackage{fullpage}
 \usepackage{graphicx}
+\usepackage{eso-pic}
 \usepackage{float}
 \usepackage{geometry}
 \usepackage{polynom}
+\usepackage{transparent}
 \geometry{top=1.2cm}
 \title{\small Facultad de Matemática, Astronomía, Física y Computación}
 \author{Simulacro Segundo Parcial\\ GURI - La Bisagra, conduccion del CEIMAF}
 \date{03 de Octubre de 2026}
+
+\AddToShipoutPictureFG{%
+    \AtPageCenter{%
+        \makebox(0,0){\transparent{0.25}\includegraphics[width=0.8\paperwidth]{popnegro.pdf}}%
+    }%
+}
+
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item \begin{enumerate}
+    \item \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.7]{Figura1.png}
+                \caption{Tablas de verdad}
+                \label{fig:Figura1}
+            \end{figure}
+    \begin{enumerate}
         \item trabajemos con cada proposición individualmente:
         \begin{itemize}
             \item \textbf{p: La negación de "Existe un número natural que no es racional" es "Existe un número natural que es racional".}: En este caso la negación de un cuantificador de existencia ($\exists$) es un cuantificador universal ($\forall$), entonces la negación de "Existe un número natural que no es racional" es "(Para) todo número natural es racional", lo cual no coincide con "Existe un número natural que es racional", por lo tanto la proposición es \textbf{FALSA}
@@ -27,14 +42,7 @@
                 2x=3 \implies x=\frac{3}{2}
                 \end{equation*}
                 Como $\frac{3}{2} \in \mathbb{Q}$ pues en $\mathbb{Q}$ están los números que se pueden expresar como cociente de dos enteros, la proposición es \textbf{VERDADERA}.
-            \item \textbf{t: A partir de los valores de verdad de $p, q, r$ y $s$ obtenidos, podemos afirmar que $\left(r \vee p\right) \implies \left(\lnot s \implies q\right)$ es verdadero.}: Apoyémonos en las tablas de verdad de las operaciones que aparecen:
-            \begin{figure}[h!]
-                \centering
-                \includegraphics[scale=0.7]{Figura1.png}
-                \caption{Tablas de verdad}
-                \label{fig:Figura1}
-            \end{figure}
-            
+            \item \textbf{t: A partir de los valores de verdad de $p, q, r$ y $s$ obtenidos, podemos afirmar que $\left(r \vee p\right) \implies \left(\lnot s \implies q\right)$ es verdadero.}: Apoyémonos en las tablas de verdad de las operaciones que aparecen:\\
             Trabajemos por partes dentro de esta proposición con los valores de verdad que obtuvimos. \begin{itemize}
                 \item $\left(r \vee p\right)$: Con $r$ verdadera y $p$ falsa 
                     \begin{gather*}
@@ -132,12 +140,14 @@
                 \#(S-(C\cup P))=405-250\\
                 \#(S-(C\cup P))=155
             \end{gather*}
+
             \begin{figure}[h!]
                 \centering
-                \includegraphics[scale=0.5]{Figura2.jpg}
+                \includegraphics[scale=0.5]{Figura2.png}
                 \caption{Diagrama de Venn}
                 \label{fig:Figura2}
             \end{figure}
+
         \end{enumerate}
         \item Repasemos los conjuntos con los que vamos a trabajar:
         \begin{itemize}
@@ -153,38 +163,42 @@
                 \item Expresar $C$ por extensión: $C=\left\{-1,0,3\right\}$
             \end{itemize}
             \item La representación en la recta numérica:
+            
             \begin{figure}[h!]
                 \centering
-                \includegraphics[scale=0.6]{Figura3.png}
+                \includegraphics[scale=0.6]{Figura3.jpg}
                 \caption{Representación en la recta numérica}
                 \label{fig:Figura3}
             \end{figure}
             \item $A \times C$ es el conjunto de los pares ordenados $(x,y)$ tal que $x$ está en $A$ e $y$ está en $C$. Para graficar la región, represento $A$ sobre el Eje $X$ y $C$ sobre el Eje $Y$, luego grafico $A$ sobre las rectas que pasan por los valores de $C$ representados en el Eje $Y$
-            \begin{figure}[h!]
+        \end{enumerate}
+        
+            \begin{figure}[H]
                 \centering
                 \includegraphics[scale=0.5]{Figura4.png}
                 \caption{Producto cartesiano $A \times C$}
                 \label{fig:Figura4}
             \end{figure}
-        \end{enumerate}
-        \item \begin{enumerate}
-        \begin{enumerate}
-            \item Para el dominio nos centramos en el eje $X$ y como recorre $f(x)$, mientras que para la imagen nos centramos en el eje $Y$:
-            \begin{itemize}
-                \item Comienza en $x=-6$, corta en $x=1$ sin incluir ese número y retoma en $x=2$ para finalizar en $x=4$ inclusive. \textbf{El dominio se expresa $[-6,1)\cup(2,4]$}
-                \item Vemos como la curva alcanza el $y=-3$ y sube a $y=3$. También tenemos el segmento que se mantiene sobre el $y=-4$. \textbf{La imagen se expresa $[-3,3]\cup \left\{-4\right\}$}
-            \end{itemize}
-            \item Debemos observar que intervalos de la función se encuentran representados por debajo del eje $X$, esta particularidad se da entre $x=-6$ y $x=-2$ y entre $x=2$ y $x=4$. Por lo tanto, resulta $f(x)\leq 0$ cuando $x \in [-6,-2] \cup (2,4)$
-        \end{enumerate}
-        \item Para determinar el dominio de $f(x)=\frac{3x}{x^2-49}$ debemos recordar las restricciones que nos presenta la función, en este caso el denominador no puede ser igual a cero ya que no se puede dividir por 0, rescatando que no existe otra restricción para $f(x)$, encontremos los valores que provocan 0 en el denominador:
-        \begin{gather*}
-            x^2-49=0\\
-            x^2=49\\
-            x=\pm \sqrt{49}\\
-            x=\pm 7
-        \end{gather*}
-        Por lo tanto, el dominio de $f(x)$ es $\mathbb{R}-\left\{-7,7\right\}$ o expresado en intervalos: $(-\infty,-7)\cup(-7,7)\cup(7,\infty)$ ó $Dom(f)=\left\{x \in \mathbb{R}/ x \neq7 \wedge x \neq -7 \right\}$
-        \end{enumerate}
+
+        \item 
+            \begin{enumerate}
+                \item \begin{enumerate}
+                    \item Para el dominio nos centramos en el eje $X$ y como recorre $f(x)$, mientras que para la imagen nos centramos en el eje $Y$:
+                    \begin{itemize}
+                        \item Comienza en $x=-6$, corta en $x=1$ sin incluir ese número y retoma en $x=2$ para finalizar en $x=4$ inclusive. \textbf{El dominio se expresa $[-6,1)\cup(2,4]$}
+                        \item Vemos como la curva alcanza el $y=-3$ y sube a $y=3$. También tenemos el segmento que se mantiene sobre el $y=-4$. \textbf{La imagen se expresa $[-3,3]\cup \left\{-4\right\}$}
+                    \end{itemize}
+                    \item Debemos observar que intervalos de la función se encuentran representados por debajo del eje $X$, esta particularidad se da entre $x=-6$ y $x=-2$ y entre $x=2$ y $x=4$. Por lo tanto, resulta $f(x)\leq 0$ cuando $x \in [-6,-2] \cup (2,4)$
+                \end{enumerate}
+                \item Para determinar el dominio de $f(x)=\frac{3x}{x^2-49}$ debemos recordar las restricciones que nos presenta la función, en este caso el denominador no puede ser igual a cero ya que no se puede dividir por 0, rescatando que no existe otra restricción para $f(x)$, encontremos los valores que provocan 0 en el denominador:
+                \begin{gather*}
+                    x^2-49=0\\
+                    x^2=49\\
+                    x=\pm \sqrt{49}\\
+                    x=\pm 7
+                \end{gather*}
+                Por lo tanto, el dominio de $f(x)$ es $\mathbb{R}-\left\{-7,7\right\}$ o expresado en intervalos: $(-\infty,-7)\cup(-7,7)\cup(7,\infty)$ ó $Dom(f)=\left\{x \in \mathbb{R}/ x \neq7 \wedge x \neq -7 \right\}$
+            \end{enumerate}
 \end{enumerate}
 
 \end{document}

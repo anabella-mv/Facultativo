@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.22)  2 OCT 2026 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.22)  2 OCT 2026 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
 (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+(C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
 \c@section=\count276
@@ -235,7 +235,27 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen185
 \Gin@req@width=\dimen186
-) (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2026/05/31 v3.0e eso-pic (RN)
+\ESO@tempdima=\dimen187
+\ESO@tempdimb=\dimen188
+ (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)) (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count313
 \float@exts=\toks25
@@ -245,26 +265,32 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/polynom\polynom.sty
 Package: polynom 2017/07/17 0.19 (CH,HA)
 \pld@currstage=\count314
-) (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent.sty
+Package: transparent 2025-06-23 v1.6 Transparency with color stacks
+ (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent-nometadata.sty
+Package: transparent-nometadata 2025-06-23 v1.6 Transparency via pdfTeX's color stack (HO)
+ (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+))) (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 ) (c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\ResPar2.aux)
 \openout1 = `ResPar2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -274,23 +300,23 @@ LaTeX Font Info:    ... okay on input line 17.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* h-part:(L,W,R)=(28.45274pt, 512.14963pt, 56.9055pt)
 * v-part:(T,H,B)=(34.14322pt, 753.99812pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
+* \textwidth=512.14963pt
 * \textheight=753.99812pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-38.12677pt
 * \headheight=0.0pt
 * \headsep=0.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -303,13 +329,13 @@ LaTeX Font Info:    ... okay on input line 17.
 (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count316
-\scratchdimen=\dimen187
+\scratchdimen=\dimen189
 \scratchbox=\box104
 \nofMPsegments=\count317
 \nofMParguments=\count318
 \everyMPshowfont=\toks27
 \MPscratchCnt=\count319
-\MPscratchDim=\dimen188
+\MPscratchDim=\dimen190
 \MPnumerator=\count320
 \makeMPintoPDFobject=\count321
 \everyMPtoPDFconversion=\toks28
@@ -319,77 +345,95 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
  (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (C:\Users\maile\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <Figura1.png, id=1, 386.6445pt x 199.947pt>
 File: Figura1.png Graphic file (type png)
 <use Figura1.png>
-Package pdftex.def Info: Figura1.png  used on input line 33.
+Package pdftex.def Info: Figura1.png  used on input line 31.
 (pdftex.def)             Requested size: 270.6493pt x 139.96193pt.
 
 
+<popnegro.pdf, id=3, 384.43625pt x 513.92pt>
+File: popnegro.pdf Graphic file (type pdf)
+<use popnegro.pdf>
+Package pdftex.def Info: popnegro.pdf  used on input line 52.
+(pdftex.def)             Requested size: 478.00812pt x 639.04997pt.
 [1
 
-{C:/Users/maile/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figura1.png>]
+{C:/Users/maile/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figura1.png> <./popnegro.pdf>]
 
+File: popnegro.pdf Graphic file (type pdf)
+<use popnegro.pdf>
+Package pdftex.def Info: popnegro.pdf  used on input line 95.
+(pdftex.def)             Requested size: 478.00812pt x 639.04997pt.
 [2]
-Overfull \hbox (0.29361pt too wide) in paragraph at lines 115--116
-[]\OT1/cmr/m/n/10.95 Para cal-cu-lar a quienes pre-fieren es-cuchar ^^Sunicamente Suce-sos, es de-cir, a quienes pertenecen
+Overfull \hbox (6.96439pt too wide) in paragraph at lines 123--124
+[]\OT1/cmr/m/n/12 Para cal-cu-lar a quienes pre-fieren es-cuchar ^^Sunicamente Suce-sos, es de-cir, a quienes pertenecen
  []
 
 
 
+File: popnegro.pdf Graphic file (type pdf)
+<use popnegro.pdf>
+Package pdftex.def Info: popnegro.pdf  used on input line 133.
+(pdftex.def)             Requested size: 478.00812pt x 639.04997pt.
 [3]
-<Figura2.jpg, id=22, 707.93517pt x 575.05162pt>
-File: Figura2.jpg Graphic file (type jpg)
-<use Figura2.jpg>
-Package pdftex.def Info: Figura2.jpg  used on input line 137.
-(pdftex.def)             Requested size: 353.9667pt x 287.5251pt.
-<Figura3.png, id=23, 422.7795pt x 333.04425pt>
-File: Figura3.png Graphic file (type png)
-<use Figura3.png>
-Package pdftex.def Info: Figura3.png  used on input line 158.
-(pdftex.def)             Requested size: 253.66965pt x 199.82808pt.
+<Figura2.png, id=25, 519.74174pt x 422.7795pt>
+File: Figura2.png Graphic file (type png)
+<use Figura2.png>
+Package pdftex.def Info: Figura2.png  used on input line 146.
+(pdftex.def)             Requested size: 259.87024pt x 211.38922pt.
+<Figura3.jpg, id=26, 648.87581pt x 202.82227pt>
+File: Figura3.jpg Graphic file (type jpg)
+<use Figura3.jpg>
+Package pdftex.def Info: Figura3.jpg  used on input line 169.
+(pdftex.def)             Requested size: 389.32849pt x 121.69429pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figura4.png, id=24, 761.84625pt x 324.46219pt>
+<Figura4.png, id=27, 761.84625pt x 324.46219pt>
 File: Figura4.png Graphic file (type png)
 <use Figura4.png>
-Package pdftex.def Info: Figura4.png  used on input line 165.
+Package pdftex.def Info: Figura4.png  used on input line 178.
 (pdftex.def)             Requested size: 380.9222pt x 162.23068pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+File: popnegro.pdf Graphic file (type pdf)
+<use popnegro.pdf>
+Package pdftex.def Info: popnegro.pdf  used on input line 182.
+(pdftex.def)             Requested size: 478.00812pt x 639.04997pt.
+[4 <./Figura2.png>]
 
-
-[4 <./Figura2.jpg>]
-
-[5 <./Figura3.png> <./Figura4.png>] (c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\ResPar2.aux)
+File: popnegro.pdf Graphic file (type pdf)
+<use popnegro.pdf>
+Package pdftex.def Info: popnegro.pdf  used on input line 204.
+(pdftex.def)             Requested size: 478.00812pt x 639.04997pt.
+[5 <./Figura3.jpg> <./Figura4.png>] (c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\ResPar2.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4426 strings out of 468149
- 69118 string characters out of 5431082
- 495263 words of memory out of 5000000
- 32988 multiletter control sequences out of 15000+600000
- 633966 words of font info for 67 fonts, out of 8000000 for 9000
+ 5133 strings out of 468149
+ 80836 string characters out of 5431082
+ 509501 words of memory out of 5000000
+ 33670 multiletter control sequences out of 15000+600000
+ 635312 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,65p,585b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\maile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\ResPar2.pdf (5 pages, 690465 bytes).
+ 57i,14n,65p,585b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\maile\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on c:\Users\maile\OneDrive\Desktop\Facultativo\Teoricos\build\ResPar2.pdf (5 pages, 429822 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
