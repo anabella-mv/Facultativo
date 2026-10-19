@@ -34,7 +34,7 @@ COLOR_PENDIENTE = "#2b6cb0"  # Azul
 COLOR_ACTUAL = "#ecc94b"     # Amarillo
 COLOR_ACIERTO = "#38a169"    # Verde
 COLOR_ERROR = "#e53e3e"      # Rojo
-COLOR_FONDO = "#1a202c"      # Gris azulado oscuro
+COLOR_FONDO = "#8D5919"      # Gris azulado oscuro
 
 def normalizar(texto):
     texto = texto.strip().lower()
@@ -46,8 +46,8 @@ def normalizar(texto):
 class PasapalabraGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Pasapalabra Matemático - Secundaria")
-        self.root.geometry("920x780")
+        self.root.title("Pasapalabra Matemático")
+        self.root.geometry("1420x780")
         self.root.configure(bg=COLOR_FONDO)
         self.root.resizable(False, False)
 
@@ -57,7 +57,7 @@ class PasapalabraGUI:
         self.aciertos = 0
         self.errores = 0
         self.estados = ["pendiente"] * len(ROSCO)
-        self.respuestas_usuario = [""] * len(ROSCO)  # Guardar lo que escribió el usuario
+        self.respuestas_usuario = [""] * len(ROSCO) 
         self.pendientes = list(range(len(ROSCO)))
         self.indice_turno = 0
 
