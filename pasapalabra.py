@@ -52,7 +52,7 @@ class PasapalabraGUI:
         self.root.resizable(False, False)
 
         # Estado del juego
-        self.tiempo_restante = 360
+        self.tiempo_restante = 400
         self.timer_id = None
         self.aciertos = 0
         self.errores = 0
