@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1793850287.05089 "c:/Users/maile/OneDrive/Desktop/Facultativo/Teoricos/ResPar3.tex" "build/ResPar3.pdf" "ResPar3" 1793850288.37166 0
+["pdflatex"] 1793850823.96287 "c:/Users/maile/OneDrive/Desktop/Facultativo/Teoricos/ResPar3.tex" "build/ResPar3.pdf" "ResPar3" 1793850825.52707 0
   "C:/Users/maile/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1790992751 82011 97247c01f6bfb6f6d0c40fab12a08423 ""
   "C:/Users/maile/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1770319395 14064 56bc4db3ccda63c58e8e08795dbdd1a8 ""
   "C:/Users/maile/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1753226956 13254313 bbe0aa9d4c0ea772a5cdd7d7ce6dcabd ""
@@ -171,9 +171,9 @@
   "C:/Users/maile/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1749468414 10374 2ffd4f27c7f90b8a300608069537743c ""
   "C:/Users/maile/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1749468414 33259 db80f750a01491473161bd4d0f6986d2 ""
   "C:/Users/maile/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "ResPar3.tex" 1793850286 18288 92197aefd71aa01e19427326636705c5 ""
-  "build/ResPar3.aux" 1793850288 194 1a63a044c878c62355a34212ba857837 "pdflatex"
-  "c:/Users/maile/OneDrive/Desktop/Facultativo/Teoricos/ResPar3.tex" 1793850286 18288 92197aefd71aa01e19427326636705c5 ""
+  "ResPar3.tex" 1793850822 18288 09fc22b713c5064842470e65c5d77f4c ""
+  "build/ResPar3.aux" 1793850825 194 1a63a044c878c62355a34212ba857837 "pdflatex"
+  "c:/Users/maile/OneDrive/Desktop/Facultativo/Teoricos/ResPar3.tex" 1793850822 18288 09fc22b713c5064842470e65c5d77f4c ""
   (generated)
   "build/ResPar3.aux"
   "build/ResPar3.log"
