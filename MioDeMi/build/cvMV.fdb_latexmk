@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1793837573.44853 "c:/Users/maile/OneDrive/Desktop/Facultativo/MioDeMi/cvMV.tex" "build/cvMV.pdf" "cvMV" 1793837575.08799 0
+["pdflatex"] 1793840808.51704 "c:/Users/maile/OneDrive/Desktop/Facultativo/MioDeMi/cvMV.tex" "build/cvMV.pdf" "cvMV" 1793840810.44403 0
   "C:/Users/maile/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1790992751 82011 97247c01f6bfb6f6d0c40fab12a08423 ""
   "C:/Users/maile/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1753226956 13254313 bbe0aa9d4c0ea772a5cdd7d7ce6dcabd ""
   "C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1651500229 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -197,10 +197,10 @@
   "C:/Users/maile/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/maile/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/maile/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "build/cvMV.aux" 1793837574 824 2e41e36aea48c3b968907402cd97e5b4 "pdflatex"
-  "build/cvMV.out" 1793837574 871 ef41c5943b54ffbf76d86c58e9e32d0c "pdflatex"
-  "c:/Users/maile/OneDrive/Desktop/Facultativo/MioDeMi/cvMV.tex" 1793837572 6545 0eac2cf6e63e498b09476b9a04d9c99c ""
-  "cvMV.tex" 1793837572 6545 0eac2cf6e63e498b09476b9a04d9c99c ""
+  "build/cvMV.aux" 1793840810 1137 5f15fa4c98faf2a4c846b6be6579726e "pdflatex"
+  "build/cvMV.out" 1793840810 1330 4aef097bbec5b581b95fedb1d719cfba "pdflatex"
+  "c:/Users/maile/OneDrive/Desktop/Facultativo/MioDeMi/cvMV.tex" 1793840807 6934 1abb0225711e12bd902488947d8421bb ""
+  "cvMV.tex" 1793840807 6934 1abb0225711e12bd902488947d8421bb ""
   (generated)
   "build/cvMV.aux"
   "build/cvMV.log"
