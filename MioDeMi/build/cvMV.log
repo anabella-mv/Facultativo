@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.22)  4 NOV 2026 22:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.22)  4 NOV 2026 22:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -781,15 +781,15 @@ Package rerunfilecheck Info: File `cvMV.out' has not changed.
 (rerunfilecheck)             Checksum: 35DA3E41CE6D2788E616C6DDC606ABC0;1239.
  ) 
 Here is how much of TeX's memory you used:
- 27261 strings out of 468149
- 529351 string characters out of 5431082
+ 27259 strings out of 468149
+ 529329 string characters out of 5431082
  1032006 words of memory out of 5000000
  55259 multiletter control sequences out of 15000+600000
- 685673 words of font info for 134 fonts, out of 8000000 for 9000
+ 685572 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  129i,12n,129p,1053b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/maile/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso17.pfb>
-Output written on c:\Users\maile\OneDrive\Desktop\Facultativo\MioDeMi\build\cvMV.pdf (3 pages, 234131 bytes).
+Output written on c:\Users\maile\OneDrive\Desktop\Facultativo\MioDeMi\build\cvMV.pdf (3 pages, 234173 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
